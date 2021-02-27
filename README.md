@@ -60,40 +60,25 @@ subtract1 naturalNumber =
     NaturalNumber (naturalNumber - 1)
 ```
 
-We have a typesafe subtract? Thant's neat.
+We have a typesafe subtract? That's neat.
 
-For more complex usecases, you might also want a function, where one `NaturalNat` should be at least as big as another one.
+You might also want a function, where one `NaturalNat` should be at least as big as another one.
 
 ```elm
 unsafeInterval : NaturalNumber first -> NaturalNumber maybeMoreThanFirst -> Interval
 ```
 
-We cannot promise that `first Plus maybeMore Is maybeMoreThanFirst`. Or can we?
+We cannot promise that `first DescribesADelta maybeMore Is maybeMoreThanFirst`. Or can we?
 
-```elm
-type NatWhichCanAdd n addAbility =
-    NatWhichCanAdd (NaturalNumber n)
-
-oneWithAddAbility : NatWhichCanAdd N1Nat (Plus more Is (N1NatPlus more))
-oneWithAddAbility =
-    NatWhichCanAdd one
-
-add1WithAddAbility :
-    NatWhichCanAdd n (Plus more Is nPlusMore)
-    -> NatWhichCanAdd (N1NatPlus n) (Plus more Is (N1NatPlus nPlusMore))
-add1WithAddAbility =
-    NatWhichCanAdd one
-```
-We defined the ability to add!
-
-```elm
-safeInterval :
-    NatWhichCanAdd first (Plus maybeMore Is last)
-    -> NatWhichCanAdd last addAbility
-    -> Interval
-```
+→ Take a look at [`elm-n-type`][elm-n-type]
 
 
-This package is the foundation of `indique/elm-n-nat`, `indique/elm-nat-within`, `indique/elm-n-array`.
+This package, together with [`elm-n-type`][elm-n-type] is the foundation of [`elm-n-nat`][elm-n-nat], [`elm-nat-within`][elm-nat-within], [`elm-n-array`][elm-n-array].
 
 Take a closer look at those packages to see `N.Nat.Type` in action!
+
+
+[elm-n-type]: https://package.elm-lang.org/packages/indique/elm-n-type/latest/
+[elm-n-nat]: https://package.elm-lang.org/packages/indique/elm-n-nat/latest/
+[elm-nat-within]: https://package.elm-lang.org/packages/indique/elm-nat-within/latest/
+[elm-n-array]: https://package.elm-lang.org/packages/indique/elm-n-array/latest/

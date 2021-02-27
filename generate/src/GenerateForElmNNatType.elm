@@ -54,7 +54,6 @@ import Elm.CodeGen
         , parens
         , pipel
         , piper
-        , plus
         , record
         , recordAnn
         , recordPattern
@@ -116,7 +115,7 @@ type ShownOrFoldedWithOptionalSave content
 
 
 type NNatTypeTag
-    = NNatTypeAddAbility
+    = NNatTypeDescribesADelta
     | NNatTypeExact
     | NNatTypeAtLeast
 
@@ -253,8 +252,8 @@ nNatTypeModule lastN =
             { moduleComment =
                 \declarations ->
                     [ markdown "See the readme for more information."
-                    , markdown "## add ability"
-                    , docTagsFrom NNatTypeAddAbility declarations
+                    , markdown "## describe as a difference"
+                    , docTagsFrom NNatTypeDescribesADelta declarations
                     , markdown "## at least"
                     , docTagsFrom NNatTypeAtLeast declarations
                     , markdown "## exact"
@@ -263,45 +262,7 @@ nNatTypeModule lastN =
             }
     , imports = []
     , declarations =
-        [ [ packageExposedTypeDecl NNatTypeAddAbility
-                ClosedType
-                [ markdown "You might want a function, where one `N-X-Nat` should be at least as big as another one."
-                , code "unsafeInterval : Nat first -> Nat maybeMoreThanFirst -> Interval"
-                , markdown "We cannot promise that `first Plus maybeMore Is maybeMoreThanFirst`. Or can we?"
-                , code "type NatWhichCanAdd n addAbility"
-                , code "    = NatWhichCanAdd Int"
-                , code ""
-                , code "oneWithAddAbility : NatWhichCanAdd N1Nat (Plus more Is (N1NatPlus more))"
-                , code "oneWithAddAbility ="
-                , code "    NatWhichCanAdd 1"
-                , code ""
-                , code "add1WithAddAbility :"
-                , code "    NatWhichCanAdd n (Plus more Is nPlusMore)"
-                , code "    -> NatWhichCanAdd (N1NatPlus n) (Plus more Is (N1NatPlus nPlusMore))"
-                , code "add1WithAddAbility nNatWhichCanAdd ="
-                , code "    let"
-                , code "        (NatWhichCanAdd int) ="
-                , code "    in"
-                , code "    NatWhichCanAdd (int + 1)"
-                , markdown "We defined the ability to add!"
-                , code "safeInterval :"
-                , code "    NatWhichCanAdd first (Plus maybeMore Is last)"
-                , code "    -> NatWhichCanAdd last addAbility"
-                , code "    -> Interval"
-                ]
-                "Plus"
-                [ "more", "is", "nPlusMore" ]
-                [ ( "Plus", [ typed "Never" [] ] ) ]
-          , packageExposedTypeDecl NNatTypeAddAbility
-                ClosedType
-                [ markdown "Simply makes `Plus` look more pleasant."
-                , code "NatWhichCanAdd n (Plus more Is nPlusMore)"
-                ]
-                "Is"
-                []
-                [ ( "Is", [ typed "Never" [] ] ) ]
-          ]
-        , [ packageExposedTypeDecl NNatTypeAtLeast
+        [ [ packageExposedTypeDecl NNatTypeAtLeast
                 ClosedType
                 [ markdown "At least 1."
                 ]
