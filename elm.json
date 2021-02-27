@@ -3,7 +3,7 @@
     "name": "indique/elm-n-nat-type",
     "summary": "express numbers within a type",
     "license": "MIT",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "exposed-modules": [
         "N.Nat.Type"
     ],
