@@ -23,11 +23,11 @@ import Nat.Type exposing (..)
     one =
         NaturalNumber 1
     
-    two : NaturalNumber N1Nat
+    two : NaturalNumber N2Nat
     two =
         NaturalNumber 2
     
-    ten : NaturalNumber N1Nat0
+    ten : NaturalNumber N10Nat
     ten =
         NaturalNumber 10
     
