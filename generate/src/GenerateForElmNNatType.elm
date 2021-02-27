@@ -115,8 +115,7 @@ type ShownOrFoldedWithOptionalSave content
 
 
 type NNatTypeTag
-    = NNatTypeDescribesADelta
-    | NNatTypeExact
+    = NNatTypeExact
     | NNatTypeAtLeast
 
 
@@ -252,8 +251,6 @@ nNatTypeModule lastN =
             { moduleComment =
                 \declarations ->
                     [ markdown "See the readme for more information."
-                    , markdown "## describe as a difference"
-                    , docTagsFrom NNatTypeDescribesADelta declarations
                     , markdown "## at least"
                     , docTagsFrom NNatTypeAtLeast declarations
                     , markdown "## exact"
