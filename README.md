@@ -77,6 +77,18 @@ This package, together with [`elm-n-type`][elm-n-type] is the foundation of [`el
 
 Take a closer look at those packages to see `N.Nat.Type` in action!
 
+### about a big limitation
+
+Sadly, while experimenting with type aliases, I discovered that type aliases can only expand so much.
+
+```elm
+compilingProcessGetsKilled
+    : NaturalNumber (N192NatPlus N1Nat)
+```
+
+If a type alias is not fully expanded after _192_ tries, there seems to be a hard limit and the compilation stops.
+
+This is really _the_ factor holding this library down. 😞
 
 [elm-n-type]: https://package.elm-lang.org/packages/indique/elm-n-type/latest/
 [elm-n-nat]: https://package.elm-lang.org/packages/indique/elm-n-nat/latest/
