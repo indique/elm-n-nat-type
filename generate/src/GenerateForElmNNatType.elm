@@ -94,20 +94,14 @@ main =
 
 
 type alias Model =
-    { lastN : Int
-    , nNatTypeModuleShownOrFolded :
-        ShownOrFoldedWithOptionalSave (Ui.Element Msg)
+    { nNatTypeModuleShownOrFolded :
+        ShownOrFolded (Ui.Element Msg)
     }
 
 
 type ShownOrFolded content
     = Shown content
     | Folded
-
-
-type ShownOrFoldedWithOptionalSave content
-    = ShownOrFolded (ShownOrFolded content)
-    | HiddenWithSave content
 
 
 
@@ -125,16 +119,14 @@ type NNatTypeTag
 
 init : ( Model, Cmd Msg )
 init =
-    ( { lastN = 128
-      , nNatTypeModuleShownOrFolded = ShownOrFolded Folded
+    ( { nNatTypeModuleShownOrFolded = Folded
       }
     , Cmd.none
     )
 
 
 type Msg
-    = ChangeLastN Int
-    | DownloadModules
+    = DownloadModules
     | DownloadModulesAtTime ( Time.Zone, Time.Posix )
     | SwitchVisibleModule ModulesInElmNArrays
 
@@ -146,14 +138,6 @@ type ModulesInElmNArrays
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        ChangeLastN lastN ->
-            ( { model
-                | lastN = lastN
-                , nNatTypeModuleShownOrFolded = ShownOrFolded Folded
-              }
-            , Cmd.none
-            )
-
         DownloadModules ->
             ( model
             , Task.perform
@@ -177,7 +161,7 @@ update msg model =
                         zipEntryFromModule time moduleFile
                  in
                  Zip.fromEntries
-                    [ toZipEntry (nNatTypeModule (.lastN model))
+                    [ toZipEntry nNatTypeModule
                     ]
                     |> Zip.toBytes
                 )
@@ -188,32 +172,12 @@ update msg model =
                 NNatType ->
                     { model
                         | nNatTypeModuleShownOrFolded =
-                            switchShownOrFoldedWithSave
+                            switchShownOrFolded
                                 (.nNatTypeModuleShownOrFolded model)
-                                (\() ->
-                                    nNatTypeModule (.lastN model)
-                                        |> Ui.module_
-                                )
+                                viewNNatTypeModule
                     }
             , Cmd.none
             )
-
-
-switchShownOrFoldedWithSave :
-    ShownOrFoldedWithOptionalSave content
-    -> (() -> content)
-    -> ShownOrFoldedWithOptionalSave content
-switchShownOrFoldedWithSave visibility makeContent =
-    case visibility of
-        ShownOrFolded Folded ->
-            ShownOrFolded
-                (Shown (makeContent ()))
-
-        HiddenWithSave content ->
-            ShownOrFolded (Shown content)
-
-        ShownOrFolded (Shown content) ->
-            HiddenWithSave content
 
 
 switchShownOrFolded :
@@ -229,28 +193,24 @@ switchShownOrFolded visibility content =
             Shown content
 
 
-dropSaved : ShownOrFoldedWithOptionalSave content -> ShownOrFolded content
-dropSaved visibilityWithSave =
-    case visibilityWithSave of
-        ShownOrFolded visibility ->
-            visibility
-
-        HiddenWithSave _ ->
-            Folded
-
 
 
 --
 
+viewNNatTypeModule : Ui.Element msg
+viewNNatTypeModule =
+    Ui.module_ nNatTypeModule
 
-nNatTypeModule : Int -> Module NNatTypeTag
-nNatTypeModule lastN =
+
+nNatTypeModule : Module NNatTypeTag
+nNatTypeModule =
     { name = [ "N", "Nat", "Type" ]
     , roleInPackage =
         PackageExposedModule
             { moduleComment =
                 \declarations ->
-                    [ markdown "See the readme for more information."
+                    [ markdown "Represent natural numbers within a type."
+                    , markdown "See the readme for more information."
                     , markdown "## at least"
                     , docTagsFrom NNatTypeAtLeast declarations
                     , markdown "## exact"
@@ -267,7 +227,7 @@ nNatTypeModule lastN =
                 [ "more" ]
                 [ ( "N1Plus", [ typed "Never" [] ] ) ]
           ]
-        , List.range 2 lastN
+        , List.range 2 192
             |> List.map
                 (\n ->
                     packageExposedAliasDecl NNatTypeAtLeast
@@ -276,22 +236,22 @@ nNatTypeModule lastN =
                         ("N" ++ String.fromInt n ++ "NatPlus")
                         [ "more" ]
                         (typed ("N" ++ String.fromInt (n - 1) ++ "NatPlus")
-                            [ typed "N1NatPlus" [ typeVar "more" ] ]
+                            [ typed ("N1NatPlus") [ typeVar "more" ] ]
                         )
                 )
         , [ packageExposedTypeDecl NNatTypeExact
                 ClosedType
-                [ markdown "Exact 0."
+                [ markdown "Exact the natural number 0."
                 ]
                 "N0Nat"
                 []
                 [ ( "N0Nat", [ typed "Never" [] ] ) ]
           ]
-        , List.range 1 lastN
+        , List.range 1 192
             |> List.map
                 (\n ->
                     packageExposedAliasDecl NNatTypeExact
-                        [ markdown ("Exact " ++ String.fromInt n ++ ".")
+                        [ markdown ("Exact the natural number " ++ String.fromInt n ++ ".")
                         ]
                         ("N" ++ String.fromInt n ++ "Nat")
                         []
@@ -335,7 +295,7 @@ charPrefixed use last =
 
 
 view : Model -> Html Msg
-view { lastN, nNatTypeModuleShownOrFolded } =
+view { nNatTypeModuleShownOrFolded } =
     Ui.layoutWith
         { options =
             [ Ui.focusStyle
@@ -359,7 +319,6 @@ view { lastN, nNatTypeModuleShownOrFolded } =
                 , UiFont.family [ UiFont.typeface "Fira Code" ]
                 ]
                 (Ui.text "elm-n-nat-type modules")
-            , Ui.slider { min = 100, max = 1024, value = lastN } ChangeLastN
             , UiInput.button
                 [ Ui.padding 16
                 , UiBg.color (Ui.rgba 1 0.4 0 0.6)
@@ -412,7 +371,7 @@ view { lastN, nNatTypeModuleShownOrFolded } =
                                     Folded ->
                                         switchButton ("⌄ " ++ name) switch
                         in
-                        [ ( nNatTypeModuleShownOrFolded |> dropSaved
+                        [ ( nNatTypeModuleShownOrFolded
                           , ( "N.Nat.Type", NNatType )
                           )
                         ]
