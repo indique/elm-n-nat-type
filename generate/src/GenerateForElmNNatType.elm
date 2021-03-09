@@ -194,8 +194,8 @@ switchShownOrFolded visibility content =
 
 
 
-
 --
+
 
 viewNNatTypeModule : Ui.Element msg
 viewNNatTypeModule =
@@ -222,7 +222,7 @@ nNatTypeModule =
         [ [ localTypeDecl "S"
                 [ "more" ]
                 [ ( "S", [ typed "Never" [] ] ) ]
-            , packageExposedAliasDecl NNatTypeAtLeast
+          , packageExposedAliasDecl NNatTypeAtLeast
                 [ markdown "1 + some n, which is at least 1."
                 ]
                 "N1Plus"
@@ -238,13 +238,13 @@ nNatTypeModule =
                         ("N" ++ String.fromInt n ++ "Plus")
                         [ "more" ]
                         (typed ("N" ++ String.fromInt (n - 1) ++ "Plus")
-                            [ typed ("N1Plus") [ typeVar "more" ] ]
+                            [ typed "S" [ typeVar "more" ] ]
                         )
                 )
         , [ localTypeDecl "Z"
                 []
                 [ ( "Z", [ typed "Never" [] ] ) ]
-            , packageExposedAliasDecl NNatTypeExact
+          , packageExposedAliasDecl NNatTypeExact
                 [ markdown "Exact the natural number 0."
                 ]
                 "N0"
@@ -260,7 +260,7 @@ nNatTypeModule =
                         ("N" ++ String.fromInt n)
                         []
                         (typed ("N" ++ String.fromInt n ++ "Plus")
-                            [ typed "N0" [] ]
+                            [ typed "Z" [] ]
                         )
                 )
         ]
