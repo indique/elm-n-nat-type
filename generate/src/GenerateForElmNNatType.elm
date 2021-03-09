@@ -219,33 +219,37 @@ nNatTypeModule =
             }
     , imports = []
     , declarations =
-        [ [ packageExposedTypeDecl NNatTypeAtLeast
-                ClosedType
-                [ markdown "At least 1."
-                ]
-                "N1NatPlus"
+        [ [ localTypeDecl "S"
                 [ "more" ]
-                [ ( "N1Plus", [ typed "Never" [] ] ) ]
+                [ ( "S", [ typed "Never" [] ] ) ]
+            , packageExposedAliasDecl NNatTypeAtLeast
+                [ markdown "1 + some n, which is at least 1."
+                ]
+                "N1Plus"
+                [ "more" ]
+                (typed "S" [ typeVar "more" ])
           ]
         , List.range 2 192
             |> List.map
                 (\n ->
                     packageExposedAliasDecl NNatTypeAtLeast
-                        [ markdown ("At least " ++ String.fromInt n ++ ".")
+                        [ markdown (String.fromInt n ++ " + some n, which is at least " ++ String.fromInt n ++ ".")
                         ]
-                        ("N" ++ String.fromInt n ++ "NatPlus")
+                        ("N" ++ String.fromInt n ++ "Plus")
                         [ "more" ]
-                        (typed ("N" ++ String.fromInt (n - 1) ++ "NatPlus")
-                            [ typed ("N1NatPlus") [ typeVar "more" ] ]
+                        (typed ("N" ++ String.fromInt (n - 1) ++ "Plus")
+                            [ typed ("N1Plus") [ typeVar "more" ] ]
                         )
                 )
-        , [ packageExposedTypeDecl NNatTypeExact
-                ClosedType
+        , [ localTypeDecl "Z"
+                []
+                [ ( "Z", [ typed "Never" [] ] ) ]
+            , packageExposedAliasDecl NNatTypeExact
                 [ markdown "Exact the natural number 0."
                 ]
-                "N0Nat"
+                "N0"
                 []
-                [ ( "N0Nat", [ typed "Never" [] ] ) ]
+                (typed "Z" [])
           ]
         , List.range 1 192
             |> List.map
@@ -253,10 +257,10 @@ nNatTypeModule =
                     packageExposedAliasDecl NNatTypeExact
                         [ markdown ("Exact the natural number " ++ String.fromInt n ++ ".")
                         ]
-                        ("N" ++ String.fromInt n ++ "Nat")
+                        ("N" ++ String.fromInt n)
                         []
-                        (typed ("N" ++ String.fromInt n ++ "NatPlus")
-                            [ typed "N0Nat" [] ]
+                        (typed ("N" ++ String.fromInt n ++ "Plus")
+                            [ typed "N0" [] ]
                         )
                 )
         ]

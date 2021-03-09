@@ -6,33 +6,33 @@ module Try.N.Nat.Type exposing (N0Nat, N10Nat, N1NatPlus, N1Nat, N2Nat, N2NatPlu
 --##at least
 
 
-type N1NatPlus more
-    = N1NatPlus Never
+type N1Plus more
+    = S Never
 
 
-type alias N2NatPlus more =
-    N1NatPlus (N1NatPlus more)
+type alias N2Plus more =
+    N1Plus (N1Plus more)
 
 
-type alias N3NatPlus more =
-    N1NatPlus (N2NatPlus more)
+type alias N3Plus more =
+    N1Plus (N2Plus more)
 
 
-type alias N4NatPlus more =
-    N1NatPlus (N3NatPlus more)
+type alias N4Plus more =
+    N1Plus (N3Plus more)
 
 
-type alias N10NatPlus more =
-    N1NatPlus (N1NatPlus (N1NatPlus (N1NatPlus (N1NatPlus (N1NatPlus (N1NatPlus (N1NatPlus (N1NatPlus (N1NatPlus more)))))))))
+type alias N10Plus more =
+    N1Plus (N1Plus (N1Plus (N1Plus (N1Plus (N1Plus (N1Plus (N1Plus (N1Plus (N1Plus more)))))))))
 
-type alias N100NatPlus more =
-    N10NatPlus (N10NatPlus (N10NatPlus (N10NatPlus (N10NatPlus (N10NatPlus (N10NatPlus (N10NatPlus (N10NatPlus (N10NatPlus more)))))))))
+type alias N100Plus more =
+    N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus more)))))))))
 
 type NNat a =
     NNat Int
 
-type alias NBiggestNat =
-    N100NatPlus (N10NatPlus (N10NatPlus (N10NatPlus (N10NatPlus (N10NatPlus (N10NatPlus (N10NatPlus (N10NatPlus (N10NatPlus (N2NatPlus N0Nat))))))))))
+type alias NBiggest =
+    N100Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N2Plus N0))))))))))
 
 n : NNat NBiggestNat
 n =
@@ -42,25 +42,25 @@ n =
 --##exact
 
 
-type N0Nat
-    = N0Nat Never
+type N0
+    = N0 Never
 
 
-type alias N1Nat =
-    N1NatPlus N0Nat
+type alias N1 =
+    N1Plus N0
 
 
-type alias N2Nat =
-    N2NatPlus N0Nat
+type alias N2 =
+    N2Plus N0
 
 
-type alias N3Nat =
-    N3NatPlus N0Nat
+type alias N3 =
+    N3Plus N0
 
 
-type alias N4Nat =
-    N4NatPlus N0Nat
+type alias N4 =
+    N4Plus N0
 
 
-type alias N10Nat =
-    N10NatPlus N0Nat
+type alias N10 =
+    N10Plus N0

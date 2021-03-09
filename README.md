@@ -9,7 +9,7 @@ Let's look at how in an example: Implementing a `NaturalNumber`
 ```elm
 module NaturalNumber exposing (NaturalNumber)
 
-import Nat.Type exposing (..)
+import N.Nat.Type exposing (..)
 ```
 
 - Exact description.
@@ -19,25 +19,25 @@ import Nat.Type exposing (..)
     type NaturalNumber n
         = NaturalNumber Int
     
-    one : NaturalNumber N1Nat
+    one : NaturalNumber N1
     one =
         NaturalNumber 1
     
-    two : NaturalNumber N2Nat
+    two : NaturalNumber N2
     two =
         NaturalNumber 2
     
-    ten : NaturalNumber N10Nat
+    ten : NaturalNumber N10
     ten =
         NaturalNumber 10
     
-    takesOnlyExact1 : NaturalNumber N1Nat
+    takesOnlyExact1 : NaturalNumber N1
     ```
     - `takesOnlyExact1 ten` is a compile-time-error
 
 - At least description.
     ```elm
-    takesAtLeast2 : NaturalNumber (N2NatPlus maybeMore)
+    takesAtLeast2 : NaturalNumber (N2Plus maybeMore)
     ```
     - `takesAtLeast2 one` is a compile-time-error
     - `takesAtLeast2 ten` & `takesAtLeast2 two` work
@@ -83,10 +83,13 @@ Sadly, while experimenting with type aliases, I discovered that type aliases can
 
 ```elm
 compilingProcessGetsKilled
-    : NaturalNumber (N192NatPlus N1Nat)
+    : NaturalNumber (N100NatPlus N93Nat)
 ```
 
-If a type alias is not fully expanded after _192_ tries, there seems to be a hard limit and the compilation stops.
+If a type alias is not fully expanded after _192_ tries, there seems to be a hard limit
+
+- the compilation stops
+- the elm-stuff can corrupt
 
 This is really _the_ factor holding this library down. 😞
 

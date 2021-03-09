@@ -1,4 +1,4 @@
-module N.Nat.Type exposing (N0Nat, N100Nat, N100NatPlus, N101Nat, N101NatPlus, N102Nat, N102NatPlus, N103Nat, N103NatPlus, N104Nat, N104NatPlus, N105Nat, N105NatPlus, N106Nat, N106NatPlus, N107Nat, N107NatPlus, N108Nat, N108NatPlus, N109Nat, N109NatPlus, N10Nat, N10NatPlus, N110Nat, N110NatPlus, N111Nat, N111NatPlus, N112Nat, N112NatPlus, N113Nat, N113NatPlus, N114Nat, N114NatPlus, N115Nat, N115NatPlus, N116Nat, N116NatPlus, N117Nat, N117NatPlus, N118Nat, N118NatPlus, N119Nat, N119NatPlus, N11Nat, N11NatPlus, N120Nat, N120NatPlus, N121Nat, N121NatPlus, N122Nat, N122NatPlus, N123Nat, N123NatPlus, N124Nat, N124NatPlus, N125Nat, N125NatPlus, N126Nat, N126NatPlus, N127Nat, N127NatPlus, N128Nat, N128NatPlus, N129Nat, N129NatPlus, N12Nat, N12NatPlus, N130Nat, N130NatPlus, N131Nat, N131NatPlus, N132Nat, N132NatPlus, N133Nat, N133NatPlus, N134Nat, N134NatPlus, N135Nat, N135NatPlus, N136Nat, N136NatPlus, N137Nat, N137NatPlus, N138Nat, N138NatPlus, N139Nat, N139NatPlus, N13Nat, N13NatPlus, N140Nat, N140NatPlus, N141Nat, N141NatPlus, N142Nat, N142NatPlus, N143Nat, N143NatPlus, N144Nat, N144NatPlus, N145Nat, N145NatPlus, N146Nat, N146NatPlus, N147Nat, N147NatPlus, N148Nat, N148NatPlus, N149Nat, N149NatPlus, N14Nat, N14NatPlus, N150Nat, N150NatPlus, N151Nat, N151NatPlus, N152Nat, N152NatPlus, N153Nat, N153NatPlus, N154Nat, N154NatPlus, N155Nat, N155NatPlus, N156Nat, N156NatPlus, N157Nat, N157NatPlus, N158Nat, N158NatPlus, N159Nat, N159NatPlus, N15Nat, N15NatPlus, N160Nat, N160NatPlus, N161Nat, N161NatPlus, N162Nat, N162NatPlus, N163Nat, N163NatPlus, N164Nat, N164NatPlus, N165Nat, N165NatPlus, N166Nat, N166NatPlus, N167Nat, N167NatPlus, N168Nat, N168NatPlus, N169Nat, N169NatPlus, N16Nat, N16NatPlus, N170Nat, N170NatPlus, N171Nat, N171NatPlus, N172Nat, N172NatPlus, N173Nat, N173NatPlus, N174Nat, N174NatPlus, N175Nat, N175NatPlus, N176Nat, N176NatPlus, N177Nat, N177NatPlus, N178Nat, N178NatPlus, N179Nat, N179NatPlus, N17Nat, N17NatPlus, N180Nat, N180NatPlus, N181Nat, N181NatPlus, N182Nat, N182NatPlus, N183Nat, N183NatPlus, N184Nat, N184NatPlus, N185Nat, N185NatPlus, N186Nat, N186NatPlus, N187Nat, N187NatPlus, N188Nat, N188NatPlus, N189Nat, N189NatPlus, N18Nat, N18NatPlus, N190Nat, N190NatPlus, N191Nat, N191NatPlus, N192Nat, N192NatPlus, N19Nat, N19NatPlus, N1Nat, N1NatPlus, N20Nat, N20NatPlus, N21Nat, N21NatPlus, N22Nat, N22NatPlus, N23Nat, N23NatPlus, N24Nat, N24NatPlus, N25Nat, N25NatPlus, N26Nat, N26NatPlus, N27Nat, N27NatPlus, N28Nat, N28NatPlus, N29Nat, N29NatPlus, N2Nat, N2NatPlus, N30Nat, N30NatPlus, N31Nat, N31NatPlus, N32Nat, N32NatPlus, N33Nat, N33NatPlus, N34Nat, N34NatPlus, N35Nat, N35NatPlus, N36Nat, N36NatPlus, N37Nat, N37NatPlus, N38Nat, N38NatPlus, N39Nat, N39NatPlus, N3Nat, N3NatPlus, N40Nat, N40NatPlus, N41Nat, N41NatPlus, N42Nat, N42NatPlus, N43Nat, N43NatPlus, N44Nat, N44NatPlus, N45Nat, N45NatPlus, N46Nat, N46NatPlus, N47Nat, N47NatPlus, N48Nat, N48NatPlus, N49Nat, N49NatPlus, N4Nat, N4NatPlus, N50Nat, N50NatPlus, N51Nat, N51NatPlus, N52Nat, N52NatPlus, N53Nat, N53NatPlus, N54Nat, N54NatPlus, N55Nat, N55NatPlus, N56Nat, N56NatPlus, N57Nat, N57NatPlus, N58Nat, N58NatPlus, N59Nat, N59NatPlus, N5Nat, N5NatPlus, N60Nat, N60NatPlus, N61Nat, N61NatPlus, N62Nat, N62NatPlus, N63Nat, N63NatPlus, N64Nat, N64NatPlus, N65Nat, N65NatPlus, N66Nat, N66NatPlus, N67Nat, N67NatPlus, N68Nat, N68NatPlus, N69Nat, N69NatPlus, N6Nat, N6NatPlus, N70Nat, N70NatPlus, N71Nat, N71NatPlus, N72Nat, N72NatPlus, N73Nat, N73NatPlus, N74Nat, N74NatPlus, N75Nat, N75NatPlus, N76Nat, N76NatPlus, N77Nat, N77NatPlus, N78Nat, N78NatPlus, N79Nat, N79NatPlus, N7Nat, N7NatPlus, N80Nat, N80NatPlus, N81Nat, N81NatPlus, N82Nat, N82NatPlus, N83Nat, N83NatPlus, N84Nat, N84NatPlus, N85Nat, N85NatPlus, N86Nat, N86NatPlus, N87Nat, N87NatPlus, N88Nat, N88NatPlus, N89Nat, N89NatPlus, N8Nat, N8NatPlus, N90Nat, N90NatPlus, N91Nat, N91NatPlus, N92Nat, N92NatPlus, N93Nat, N93NatPlus, N94Nat, N94NatPlus, N95Nat, N95NatPlus, N96Nat, N96NatPlus, N97Nat, N97NatPlus, N98Nat, N98NatPlus, N99Nat, N99NatPlus, N9Nat, N9NatPlus)
+module N.Nat.Type exposing (N0, N1, N10, N100, N100Plus, N101, N101Plus, N102, N102Plus, N103, N103Plus, N104, N104Plus, N105, N105Plus, N106, N106Plus, N107, N107Plus, N108, N108Plus, N109, N109Plus, N10Plus, N11, N110, N110Plus, N111, N111Plus, N112, N112Plus, N113, N113Plus, N114, N114Plus, N115, N115Plus, N116, N116Plus, N117, N117Plus, N118, N118Plus, N119, N119Plus, N11Plus, N12, N120, N120Plus, N121, N121Plus, N122, N122Plus, N123, N123Plus, N124, N124Plus, N125, N125Plus, N126, N126Plus, N127, N127Plus, N128, N128Plus, N129, N129Plus, N12Plus, N13, N130, N130Plus, N131, N131Plus, N132, N132Plus, N133, N133Plus, N134, N134Plus, N135, N135Plus, N136, N136Plus, N137, N137Plus, N138, N138Plus, N139, N139Plus, N13Plus, N14, N140, N140Plus, N141, N141Plus, N142, N142Plus, N143, N143Plus, N144, N144Plus, N145, N145Plus, N146, N146Plus, N147, N147Plus, N148, N148Plus, N149, N149Plus, N14Plus, N15, N150, N150Plus, N151, N151Plus, N152, N152Plus, N153, N153Plus, N154, N154Plus, N155, N155Plus, N156, N156Plus, N157, N157Plus, N158, N158Plus, N159, N159Plus, N15Plus, N16, N160, N160Plus, N161, N161Plus, N162, N162Plus, N163, N163Plus, N164, N164Plus, N165, N165Plus, N166, N166Plus, N167, N167Plus, N168, N168Plus, N169, N169Plus, N16Plus, N17, N170, N170Plus, N171, N171Plus, N172, N172Plus, N173, N173Plus, N174, N174Plus, N175, N175Plus, N176, N176Plus, N177, N177Plus, N178, N178Plus, N179, N179Plus, N17Plus, N18, N180, N180Plus, N181, N181Plus, N182, N182Plus, N183, N183Plus, N184, N184Plus, N185, N185Plus, N186, N186Plus, N187, N187Plus, N188, N188Plus, N189, N189Plus, N18Plus, N19, N190, N190Plus, N191, N191Plus, N192, N192Plus, N19Plus, N1Plus, N2, N20, N20Plus, N21, N21Plus, N22, N22Plus, N23, N23Plus, N24, N24Plus, N25, N25Plus, N26, N26Plus, N27, N27Plus, N28, N28Plus, N29, N29Plus, N2Plus, N3, N30, N30Plus, N31, N31Plus, N32, N32Plus, N33, N33Plus, N34, N34Plus, N35, N35Plus, N36, N36Plus, N37, N37Plus, N38, N38Plus, N39, N39Plus, N3Plus, N4, N40, N40Plus, N41, N41Plus, N42, N42Plus, N43, N43Plus, N44, N44Plus, N45, N45Plus, N46, N46Plus, N47, N47Plus, N48, N48Plus, N49, N49Plus, N4Plus, N5, N50, N50Plus, N51, N51Plus, N52, N52Plus, N53, N53Plus, N54, N54Plus, N55, N55Plus, N56, N56Plus, N57, N57Plus, N58, N58Plus, N59, N59Plus, N5Plus, N6, N60, N60Plus, N61, N61Plus, N62, N62Plus, N63, N63Plus, N64, N64Plus, N65, N65Plus, N66, N66Plus, N67, N67Plus, N68, N68Plus, N69, N69Plus, N6Plus, N7, N70, N70Plus, N71, N71Plus, N72, N72Plus, N73, N73Plus, N74, N74Plus, N75, N75Plus, N76, N76Plus, N77, N77Plus, N78, N78Plus, N79, N79Plus, N7Plus, N8, N80, N80Plus, N81, N81Plus, N82, N82Plus, N83, N83Plus, N84, N84Plus, N85, N85Plus, N86, N86Plus, N87, N87Plus, N88, N88Plus, N89, N89Plus, N8Plus, N9, N90, N90Plus, N91, N91Plus, N92, N92Plus, N93, N93Plus, N94, N94Plus, N95, N95Plus, N96, N96Plus, N97, N97Plus, N98, N98Plus, N99, N99Plus, N9Plus)
 
 {-| Represent natural numbers within a type.
 
@@ -9,3144 +9,3129 @@ See the readme for more information.
 ## at least
 
 
-@docs N100NatPlus, N101NatPlus, N102NatPlus, N103NatPlus, N104NatPlus
-@docs N105NatPlus, N106NatPlus, N107NatPlus, N108NatPlus, N109NatPlus
-@docs N10NatPlus, N110NatPlus, N111NatPlus, N112NatPlus, N113NatPlus
-@docs N114NatPlus, N115NatPlus, N116NatPlus, N117NatPlus, N118NatPlus
-@docs N119NatPlus, N11NatPlus, N120NatPlus, N121NatPlus, N122NatPlus
-@docs N123NatPlus, N124NatPlus, N125NatPlus, N126NatPlus, N127NatPlus
-@docs N128NatPlus, N129NatPlus, N12NatPlus, N130NatPlus, N131NatPlus
-@docs N132NatPlus, N133NatPlus, N134NatPlus, N135NatPlus, N136NatPlus
-@docs N137NatPlus, N138NatPlus, N139NatPlus, N13NatPlus, N140NatPlus
-@docs N141NatPlus, N142NatPlus, N143NatPlus, N144NatPlus, N145NatPlus
-@docs N146NatPlus, N147NatPlus, N148NatPlus, N149NatPlus, N14NatPlus
-@docs N150NatPlus, N151NatPlus, N152NatPlus, N153NatPlus, N154NatPlus
-@docs N155NatPlus, N156NatPlus, N157NatPlus, N158NatPlus, N159NatPlus
-@docs N15NatPlus, N160NatPlus, N161NatPlus, N162NatPlus, N163NatPlus
-@docs N164NatPlus, N165NatPlus, N166NatPlus, N167NatPlus, N168NatPlus
-@docs N169NatPlus, N16NatPlus, N170NatPlus, N171NatPlus, N172NatPlus
-@docs N173NatPlus, N174NatPlus, N175NatPlus, N176NatPlus, N177NatPlus
-@docs N178NatPlus, N179NatPlus, N17NatPlus, N180NatPlus, N181NatPlus
-@docs N182NatPlus, N183NatPlus, N184NatPlus, N185NatPlus, N186NatPlus
-@docs N187NatPlus, N188NatPlus, N189NatPlus, N18NatPlus, N190NatPlus
-@docs N191NatPlus, N192NatPlus, N19NatPlus, N1NatPlus, N20NatPlus, N21NatPlus
-@docs N22NatPlus, N23NatPlus, N24NatPlus, N25NatPlus, N26NatPlus, N27NatPlus
-@docs N28NatPlus, N29NatPlus, N2NatPlus, N30NatPlus, N31NatPlus, N32NatPlus
-@docs N33NatPlus, N34NatPlus, N35NatPlus, N36NatPlus, N37NatPlus, N38NatPlus
-@docs N39NatPlus, N3NatPlus, N40NatPlus, N41NatPlus, N42NatPlus, N43NatPlus
-@docs N44NatPlus, N45NatPlus, N46NatPlus, N47NatPlus, N48NatPlus, N49NatPlus
-@docs N4NatPlus, N50NatPlus, N51NatPlus, N52NatPlus, N53NatPlus, N54NatPlus
-@docs N55NatPlus, N56NatPlus, N57NatPlus, N58NatPlus, N59NatPlus, N5NatPlus
-@docs N60NatPlus, N61NatPlus, N62NatPlus, N63NatPlus, N64NatPlus, N65NatPlus
-@docs N66NatPlus, N67NatPlus, N68NatPlus, N69NatPlus, N6NatPlus, N70NatPlus
-@docs N71NatPlus, N72NatPlus, N73NatPlus, N74NatPlus, N75NatPlus, N76NatPlus
-@docs N77NatPlus, N78NatPlus, N79NatPlus, N7NatPlus, N80NatPlus, N81NatPlus
-@docs N82NatPlus, N83NatPlus, N84NatPlus, N85NatPlus, N86NatPlus, N87NatPlus
-@docs N88NatPlus, N89NatPlus, N8NatPlus, N90NatPlus, N91NatPlus, N92NatPlus
-@docs N93NatPlus, N94NatPlus, N95NatPlus, N96NatPlus, N97NatPlus, N98NatPlus
-@docs N99NatPlus, N9NatPlus
+@docs N100Plus, N101Plus, N102Plus, N103Plus, N104Plus, N105Plus, N106Plus, N107Plus
+@docs N108Plus, N109Plus, N10Plus, N110Plus, N111Plus, N112Plus, N113Plus, N114Plus
+@docs N115Plus, N116Plus, N117Plus, N118Plus, N119Plus, N11Plus, N120Plus, N121Plus
+@docs N122Plus, N123Plus, N124Plus, N125Plus, N126Plus, N127Plus, N128Plus, N129Plus
+@docs N12Plus, N130Plus, N131Plus, N132Plus, N133Plus, N134Plus, N135Plus, N136Plus
+@docs N137Plus, N138Plus, N139Plus, N13Plus, N140Plus, N141Plus, N142Plus, N143Plus
+@docs N144Plus, N145Plus, N146Plus, N147Plus, N148Plus, N149Plus, N14Plus, N150Plus
+@docs N151Plus, N152Plus, N153Plus, N154Plus, N155Plus, N156Plus, N157Plus, N158Plus
+@docs N159Plus, N15Plus, N160Plus, N161Plus, N162Plus, N163Plus, N164Plus, N165Plus
+@docs N166Plus, N167Plus, N168Plus, N169Plus, N16Plus, N170Plus, N171Plus, N172Plus
+@docs N173Plus, N174Plus, N175Plus, N176Plus, N177Plus, N178Plus, N179Plus, N17Plus
+@docs N180Plus, N181Plus, N182Plus, N183Plus, N184Plus, N185Plus, N186Plus, N187Plus
+@docs N188Plus, N189Plus, N18Plus, N190Plus, N191Plus, N192Plus, N19Plus, N1Plus
+@docs N20Plus, N21Plus, N22Plus, N23Plus, N24Plus, N25Plus, N26Plus, N27Plus, N28Plus
+@docs N29Plus, N2Plus, N30Plus, N31Plus, N32Plus, N33Plus, N34Plus, N35Plus, N36Plus
+@docs N37Plus, N38Plus, N39Plus, N3Plus, N40Plus, N41Plus, N42Plus, N43Plus, N44Plus
+@docs N45Plus, N46Plus, N47Plus, N48Plus, N49Plus, N4Plus, N50Plus, N51Plus, N52Plus
+@docs N53Plus, N54Plus, N55Plus, N56Plus, N57Plus, N58Plus, N59Plus, N5Plus, N60Plus
+@docs N61Plus, N62Plus, N63Plus, N64Plus, N65Plus, N66Plus, N67Plus, N68Plus, N69Plus
+@docs N6Plus, N70Plus, N71Plus, N72Plus, N73Plus, N74Plus, N75Plus, N76Plus, N77Plus
+@docs N78Plus, N79Plus, N7Plus, N80Plus, N81Plus, N82Plus, N83Plus, N84Plus, N85Plus
+@docs N86Plus, N87Plus, N88Plus, N89Plus, N8Plus, N90Plus, N91Plus, N92Plus, N93Plus
+@docs N94Plus, N95Plus, N96Plus, N97Plus, N98Plus, N99Plus, N9Plus
 ## exact
 
 
-@docs N0Nat, N100Nat, N101Nat, N102Nat, N103Nat, N104Nat, N105Nat, N106Nat, N107Nat
-@docs N108Nat, N109Nat, N10Nat, N110Nat, N111Nat, N112Nat, N113Nat, N114Nat, N115Nat
-@docs N116Nat, N117Nat, N118Nat, N119Nat, N11Nat, N120Nat, N121Nat, N122Nat, N123Nat
-@docs N124Nat, N125Nat, N126Nat, N127Nat, N128Nat, N129Nat, N12Nat, N130Nat, N131Nat
-@docs N132Nat, N133Nat, N134Nat, N135Nat, N136Nat, N137Nat, N138Nat, N139Nat, N13Nat
-@docs N140Nat, N141Nat, N142Nat, N143Nat, N144Nat, N145Nat, N146Nat, N147Nat, N148Nat
-@docs N149Nat, N14Nat, N150Nat, N151Nat, N152Nat, N153Nat, N154Nat, N155Nat, N156Nat
-@docs N157Nat, N158Nat, N159Nat, N15Nat, N160Nat, N161Nat, N162Nat, N163Nat, N164Nat
-@docs N165Nat, N166Nat, N167Nat, N168Nat, N169Nat, N16Nat, N170Nat, N171Nat, N172Nat
-@docs N173Nat, N174Nat, N175Nat, N176Nat, N177Nat, N178Nat, N179Nat, N17Nat, N180Nat
-@docs N181Nat, N182Nat, N183Nat, N184Nat, N185Nat, N186Nat, N187Nat, N188Nat, N189Nat
-@docs N18Nat, N190Nat, N191Nat, N192Nat, N19Nat, N1Nat, N20Nat, N21Nat, N22Nat, N23Nat
-@docs N24Nat, N25Nat, N26Nat, N27Nat, N28Nat, N29Nat, N2Nat, N30Nat, N31Nat, N32Nat
-@docs N33Nat, N34Nat, N35Nat, N36Nat, N37Nat, N38Nat, N39Nat, N3Nat, N40Nat, N41Nat
-@docs N42Nat, N43Nat, N44Nat, N45Nat, N46Nat, N47Nat, N48Nat, N49Nat, N4Nat, N50Nat
-@docs N51Nat, N52Nat, N53Nat, N54Nat, N55Nat, N56Nat, N57Nat, N58Nat, N59Nat, N5Nat
-@docs N60Nat, N61Nat, N62Nat, N63Nat, N64Nat, N65Nat, N66Nat, N67Nat, N68Nat, N69Nat
-@docs N6Nat, N70Nat, N71Nat, N72Nat, N73Nat, N74Nat, N75Nat, N76Nat, N77Nat, N78Nat
-@docs N79Nat, N7Nat, N80Nat, N81Nat, N82Nat, N83Nat, N84Nat, N85Nat, N86Nat, N87Nat
-@docs N88Nat, N89Nat, N8Nat, N90Nat, N91Nat, N92Nat, N93Nat, N94Nat, N95Nat, N96Nat
-@docs N97Nat, N98Nat, N99Nat, N9Nat
+@docs N0, N1, N10, N100, N101, N102, N103, N104, N105, N106, N107, N108, N109, N11, N110, N111, N112
+@docs N113, N114, N115, N116, N117, N118, N119, N12, N120, N121, N122, N123, N124, N125, N126, N127
+@docs N128, N129, N13, N130, N131, N132, N133, N134, N135, N136, N137, N138, N139, N14, N140, N141
+@docs N142, N143, N144, N145, N146, N147, N148, N149, N15, N150, N151, N152, N153, N154, N155, N156
+@docs N157, N158, N159, N16, N160, N161, N162, N163, N164, N165, N166, N167, N168, N169, N17, N170
+@docs N171, N172, N173, N174, N175, N176, N177, N178, N179, N18, N180, N181, N182, N183, N184, N185
+@docs N186, N187, N188, N189, N19, N190, N191, N192, N2, N20, N21, N22, N23, N24, N25, N26, N27, N28, N29
+@docs N3, N30, N31, N32, N33, N34, N35, N36, N37, N38, N39, N4, N40, N41, N42, N43, N44, N45, N46, N47, N48, N49
+@docs N5, N50, N51, N52, N53, N54, N55, N56, N57, N58, N59, N6, N60, N61, N62, N63, N64, N65, N66, N67, N68, N69
+@docs N7, N70, N71, N72, N73, N74, N75, N76, N77, N78, N79, N8, N80, N81, N82, N83, N84, N85, N86, N87, N88, N89
+@docs N9, N90, N91, N92, N93, N94, N95, N96, N97, N98, N99
 -}
 
 
-{-| At least 1.
+type S more
+    = S Never
 
 
+{-| 1 + some n, which is at least 1.
+
+
 -}
-type N1NatPlus more
-    = N1Plus Never
+type alias N1Plus more =
+    S more
 
 
-{-| At least 2.
+{-| 2 + some n, which is at least 2.
 
 
 -}
-type alias N2NatPlus more =
-    N1NatPlus (N1NatPlus more)
+type alias N2Plus more =
+    N1Plus (N1Plus more)
 
 
-{-| At least 3.
+{-| 3 + some n, which is at least 3.
 
 
 -}
-type alias N3NatPlus more =
-    N2NatPlus (N1NatPlus more)
+type alias N3Plus more =
+    N2Plus (N1Plus more)
 
 
-{-| At least 4.
+{-| 4 + some n, which is at least 4.
 
 
 -}
-type alias N4NatPlus more =
-    N3NatPlus (N1NatPlus more)
+type alias N4Plus more =
+    N3Plus (N1Plus more)
 
 
-{-| At least 5.
+{-| 5 + some n, which is at least 5.
 
 
 -}
-type alias N5NatPlus more =
-    N4NatPlus (N1NatPlus more)
+type alias N5Plus more =
+    N4Plus (N1Plus more)
 
 
-{-| At least 6.
+{-| 6 + some n, which is at least 6.
 
 
 -}
-type alias N6NatPlus more =
-    N5NatPlus (N1NatPlus more)
+type alias N6Plus more =
+    N5Plus (N1Plus more)
 
 
-{-| At least 7.
+{-| 7 + some n, which is at least 7.
 
 
 -}
-type alias N7NatPlus more =
-    N6NatPlus (N1NatPlus more)
+type alias N7Plus more =
+    N6Plus (N1Plus more)
 
 
-{-| At least 8.
+{-| 8 + some n, which is at least 8.
 
 
 -}
-type alias N8NatPlus more =
-    N7NatPlus (N1NatPlus more)
+type alias N8Plus more =
+    N7Plus (N1Plus more)
 
 
-{-| At least 9.
+{-| 9 + some n, which is at least 9.
 
 
 -}
-type alias N9NatPlus more =
-    N8NatPlus (N1NatPlus more)
+type alias N9Plus more =
+    N8Plus (N1Plus more)
 
 
-{-| At least 10.
+{-| 10 + some n, which is at least 10.
 
 
 -}
-type alias N10NatPlus more =
-    N9NatPlus (N1NatPlus more)
+type alias N10Plus more =
+    N9Plus (N1Plus more)
 
 
-{-| At least 11.
+{-| 11 + some n, which is at least 11.
 
 
 -}
-type alias N11NatPlus more =
-    N10NatPlus (N1NatPlus more)
+type alias N11Plus more =
+    N10Plus (N1Plus more)
 
 
-{-| At least 12.
+{-| 12 + some n, which is at least 12.
 
 
 -}
-type alias N12NatPlus more =
-    N11NatPlus (N1NatPlus more)
+type alias N12Plus more =
+    N11Plus (N1Plus more)
 
 
-{-| At least 13.
+{-| 13 + some n, which is at least 13.
 
 
 -}
-type alias N13NatPlus more =
-    N12NatPlus (N1NatPlus more)
+type alias N13Plus more =
+    N12Plus (N1Plus more)
 
 
-{-| At least 14.
+{-| 14 + some n, which is at least 14.
 
 
 -}
-type alias N14NatPlus more =
-    N13NatPlus (N1NatPlus more)
+type alias N14Plus more =
+    N13Plus (N1Plus more)
 
 
-{-| At least 15.
+{-| 15 + some n, which is at least 15.
 
 
 -}
-type alias N15NatPlus more =
-    N14NatPlus (N1NatPlus more)
+type alias N15Plus more =
+    N14Plus (N1Plus more)
 
 
-{-| At least 16.
+{-| 16 + some n, which is at least 16.
 
 
 -}
-type alias N16NatPlus more =
-    N15NatPlus (N1NatPlus more)
+type alias N16Plus more =
+    N15Plus (N1Plus more)
 
 
-{-| At least 17.
+{-| 17 + some n, which is at least 17.
 
 
 -}
-type alias N17NatPlus more =
-    N16NatPlus (N1NatPlus more)
+type alias N17Plus more =
+    N16Plus (N1Plus more)
 
 
-{-| At least 18.
+{-| 18 + some n, which is at least 18.
 
 
 -}
-type alias N18NatPlus more =
-    N17NatPlus (N1NatPlus more)
+type alias N18Plus more =
+    N17Plus (N1Plus more)
 
 
-{-| At least 19.
+{-| 19 + some n, which is at least 19.
 
 
 -}
-type alias N19NatPlus more =
-    N18NatPlus (N1NatPlus more)
+type alias N19Plus more =
+    N18Plus (N1Plus more)
 
 
-{-| At least 20.
+{-| 20 + some n, which is at least 20.
 
 
 -}
-type alias N20NatPlus more =
-    N19NatPlus (N1NatPlus more)
+type alias N20Plus more =
+    N19Plus (N1Plus more)
 
 
-{-| At least 21.
+{-| 21 + some n, which is at least 21.
 
 
 -}
-type alias N21NatPlus more =
-    N20NatPlus (N1NatPlus more)
+type alias N21Plus more =
+    N20Plus (N1Plus more)
 
 
-{-| At least 22.
+{-| 22 + some n, which is at least 22.
 
 
 -}
-type alias N22NatPlus more =
-    N21NatPlus (N1NatPlus more)
+type alias N22Plus more =
+    N21Plus (N1Plus more)
 
 
-{-| At least 23.
+{-| 23 + some n, which is at least 23.
 
 
 -}
-type alias N23NatPlus more =
-    N22NatPlus (N1NatPlus more)
+type alias N23Plus more =
+    N22Plus (N1Plus more)
 
 
-{-| At least 24.
+{-| 24 + some n, which is at least 24.
 
 
 -}
-type alias N24NatPlus more =
-    N23NatPlus (N1NatPlus more)
+type alias N24Plus more =
+    N23Plus (N1Plus more)
 
 
-{-| At least 25.
+{-| 25 + some n, which is at least 25.
 
 
 -}
-type alias N25NatPlus more =
-    N24NatPlus (N1NatPlus more)
+type alias N25Plus more =
+    N24Plus (N1Plus more)
 
 
-{-| At least 26.
+{-| 26 + some n, which is at least 26.
 
 
 -}
-type alias N26NatPlus more =
-    N25NatPlus (N1NatPlus more)
+type alias N26Plus more =
+    N25Plus (N1Plus more)
 
 
-{-| At least 27.
+{-| 27 + some n, which is at least 27.
 
 
 -}
-type alias N27NatPlus more =
-    N26NatPlus (N1NatPlus more)
+type alias N27Plus more =
+    N26Plus (N1Plus more)
 
 
-{-| At least 28.
+{-| 28 + some n, which is at least 28.
 
 
 -}
-type alias N28NatPlus more =
-    N27NatPlus (N1NatPlus more)
+type alias N28Plus more =
+    N27Plus (N1Plus more)
 
 
-{-| At least 29.
+{-| 29 + some n, which is at least 29.
 
 
 -}
-type alias N29NatPlus more =
-    N28NatPlus (N1NatPlus more)
+type alias N29Plus more =
+    N28Plus (N1Plus more)
 
 
-{-| At least 30.
+{-| 30 + some n, which is at least 30.
 
 
 -}
-type alias N30NatPlus more =
-    N29NatPlus (N1NatPlus more)
+type alias N30Plus more =
+    N29Plus (N1Plus more)
 
 
-{-| At least 31.
+{-| 31 + some n, which is at least 31.
 
 
 -}
-type alias N31NatPlus more =
-    N30NatPlus (N1NatPlus more)
+type alias N31Plus more =
+    N30Plus (N1Plus more)
 
 
-{-| At least 32.
+{-| 32 + some n, which is at least 32.
 
 
 -}
-type alias N32NatPlus more =
-    N31NatPlus (N1NatPlus more)
+type alias N32Plus more =
+    N31Plus (N1Plus more)
 
 
-{-| At least 33.
+{-| 33 + some n, which is at least 33.
 
 
 -}
-type alias N33NatPlus more =
-    N32NatPlus (N1NatPlus more)
+type alias N33Plus more =
+    N32Plus (N1Plus more)
 
 
-{-| At least 34.
+{-| 34 + some n, which is at least 34.
 
 
 -}
-type alias N34NatPlus more =
-    N33NatPlus (N1NatPlus more)
+type alias N34Plus more =
+    N33Plus (N1Plus more)
 
 
-{-| At least 35.
+{-| 35 + some n, which is at least 35.
 
 
 -}
-type alias N35NatPlus more =
-    N34NatPlus (N1NatPlus more)
+type alias N35Plus more =
+    N34Plus (N1Plus more)
 
 
-{-| At least 36.
+{-| 36 + some n, which is at least 36.
 
 
 -}
-type alias N36NatPlus more =
-    N35NatPlus (N1NatPlus more)
+type alias N36Plus more =
+    N35Plus (N1Plus more)
 
 
-{-| At least 37.
+{-| 37 + some n, which is at least 37.
 
 
 -}
-type alias N37NatPlus more =
-    N36NatPlus (N1NatPlus more)
+type alias N37Plus more =
+    N36Plus (N1Plus more)
 
 
-{-| At least 38.
+{-| 38 + some n, which is at least 38.
 
 
 -}
-type alias N38NatPlus more =
-    N37NatPlus (N1NatPlus more)
+type alias N38Plus more =
+    N37Plus (N1Plus more)
 
 
-{-| At least 39.
+{-| 39 + some n, which is at least 39.
 
 
 -}
-type alias N39NatPlus more =
-    N38NatPlus (N1NatPlus more)
+type alias N39Plus more =
+    N38Plus (N1Plus more)
 
 
-{-| At least 40.
+{-| 40 + some n, which is at least 40.
 
 
 -}
-type alias N40NatPlus more =
-    N39NatPlus (N1NatPlus more)
+type alias N40Plus more =
+    N39Plus (N1Plus more)
 
 
-{-| At least 41.
+{-| 41 + some n, which is at least 41.
 
 
 -}
-type alias N41NatPlus more =
-    N40NatPlus (N1NatPlus more)
+type alias N41Plus more =
+    N40Plus (N1Plus more)
 
 
-{-| At least 42.
+{-| 42 + some n, which is at least 42.
 
 
 -}
-type alias N42NatPlus more =
-    N41NatPlus (N1NatPlus more)
+type alias N42Plus more =
+    N41Plus (N1Plus more)
 
 
-{-| At least 43.
+{-| 43 + some n, which is at least 43.
 
 
 -}
-type alias N43NatPlus more =
-    N42NatPlus (N1NatPlus more)
+type alias N43Plus more =
+    N42Plus (N1Plus more)
 
 
-{-| At least 44.
+{-| 44 + some n, which is at least 44.
 
 
 -}
-type alias N44NatPlus more =
-    N43NatPlus (N1NatPlus more)
+type alias N44Plus more =
+    N43Plus (N1Plus more)
 
 
-{-| At least 45.
+{-| 45 + some n, which is at least 45.
 
 
 -}
-type alias N45NatPlus more =
-    N44NatPlus (N1NatPlus more)
+type alias N45Plus more =
+    N44Plus (N1Plus more)
 
 
-{-| At least 46.
+{-| 46 + some n, which is at least 46.
 
 
 -}
-type alias N46NatPlus more =
-    N45NatPlus (N1NatPlus more)
+type alias N46Plus more =
+    N45Plus (N1Plus more)
 
 
-{-| At least 47.
+{-| 47 + some n, which is at least 47.
 
 
 -}
-type alias N47NatPlus more =
-    N46NatPlus (N1NatPlus more)
+type alias N47Plus more =
+    N46Plus (N1Plus more)
 
 
-{-| At least 48.
+{-| 48 + some n, which is at least 48.
 
 
 -}
-type alias N48NatPlus more =
-    N47NatPlus (N1NatPlus more)
+type alias N48Plus more =
+    N47Plus (N1Plus more)
 
 
-{-| At least 49.
+{-| 49 + some n, which is at least 49.
 
 
 -}
-type alias N49NatPlus more =
-    N48NatPlus (N1NatPlus more)
+type alias N49Plus more =
+    N48Plus (N1Plus more)
 
 
-{-| At least 50.
+{-| 50 + some n, which is at least 50.
 
 
 -}
-type alias N50NatPlus more =
-    N49NatPlus (N1NatPlus more)
+type alias N50Plus more =
+    N49Plus (N1Plus more)
 
 
-{-| At least 51.
+{-| 51 + some n, which is at least 51.
 
 
 -}
-type alias N51NatPlus more =
-    N50NatPlus (N1NatPlus more)
+type alias N51Plus more =
+    N50Plus (N1Plus more)
 
 
-{-| At least 52.
+{-| 52 + some n, which is at least 52.
 
 
 -}
-type alias N52NatPlus more =
-    N51NatPlus (N1NatPlus more)
+type alias N52Plus more =
+    N51Plus (N1Plus more)
 
 
-{-| At least 53.
+{-| 53 + some n, which is at least 53.
 
 
 -}
-type alias N53NatPlus more =
-    N52NatPlus (N1NatPlus more)
+type alias N53Plus more =
+    N52Plus (N1Plus more)
 
 
-{-| At least 54.
+{-| 54 + some n, which is at least 54.
 
 
 -}
-type alias N54NatPlus more =
-    N53NatPlus (N1NatPlus more)
+type alias N54Plus more =
+    N53Plus (N1Plus more)
 
 
-{-| At least 55.
+{-| 55 + some n, which is at least 55.
 
 
 -}
-type alias N55NatPlus more =
-    N54NatPlus (N1NatPlus more)
+type alias N55Plus more =
+    N54Plus (N1Plus more)
 
 
-{-| At least 56.
+{-| 56 + some n, which is at least 56.
 
 
 -}
-type alias N56NatPlus more =
-    N55NatPlus (N1NatPlus more)
+type alias N56Plus more =
+    N55Plus (N1Plus more)
 
 
-{-| At least 57.
+{-| 57 + some n, which is at least 57.
 
 
 -}
-type alias N57NatPlus more =
-    N56NatPlus (N1NatPlus more)
+type alias N57Plus more =
+    N56Plus (N1Plus more)
 
 
-{-| At least 58.
+{-| 58 + some n, which is at least 58.
 
 
 -}
-type alias N58NatPlus more =
-    N57NatPlus (N1NatPlus more)
+type alias N58Plus more =
+    N57Plus (N1Plus more)
 
 
-{-| At least 59.
+{-| 59 + some n, which is at least 59.
 
 
 -}
-type alias N59NatPlus more =
-    N58NatPlus (N1NatPlus more)
+type alias N59Plus more =
+    N58Plus (N1Plus more)
 
 
-{-| At least 60.
+{-| 60 + some n, which is at least 60.
 
 
 -}
-type alias N60NatPlus more =
-    N59NatPlus (N1NatPlus more)
+type alias N60Plus more =
+    N59Plus (N1Plus more)
 
 
-{-| At least 61.
+{-| 61 + some n, which is at least 61.
 
 
 -}
-type alias N61NatPlus more =
-    N60NatPlus (N1NatPlus more)
+type alias N61Plus more =
+    N60Plus (N1Plus more)
 
 
-{-| At least 62.
+{-| 62 + some n, which is at least 62.
 
 
 -}
-type alias N62NatPlus more =
-    N61NatPlus (N1NatPlus more)
+type alias N62Plus more =
+    N61Plus (N1Plus more)
 
 
-{-| At least 63.
+{-| 63 + some n, which is at least 63.
 
 
 -}
-type alias N63NatPlus more =
-    N62NatPlus (N1NatPlus more)
+type alias N63Plus more =
+    N62Plus (N1Plus more)
 
 
-{-| At least 64.
+{-| 64 + some n, which is at least 64.
 
 
 -}
-type alias N64NatPlus more =
-    N63NatPlus (N1NatPlus more)
+type alias N64Plus more =
+    N63Plus (N1Plus more)
 
 
-{-| At least 65.
+{-| 65 + some n, which is at least 65.
 
 
 -}
-type alias N65NatPlus more =
-    N64NatPlus (N1NatPlus more)
+type alias N65Plus more =
+    N64Plus (N1Plus more)
 
 
-{-| At least 66.
+{-| 66 + some n, which is at least 66.
 
 
 -}
-type alias N66NatPlus more =
-    N65NatPlus (N1NatPlus more)
+type alias N66Plus more =
+    N65Plus (N1Plus more)
 
 
-{-| At least 67.
+{-| 67 + some n, which is at least 67.
 
 
 -}
-type alias N67NatPlus more =
-    N66NatPlus (N1NatPlus more)
+type alias N67Plus more =
+    N66Plus (N1Plus more)
 
 
-{-| At least 68.
+{-| 68 + some n, which is at least 68.
 
 
 -}
-type alias N68NatPlus more =
-    N67NatPlus (N1NatPlus more)
+type alias N68Plus more =
+    N67Plus (N1Plus more)
 
 
-{-| At least 69.
+{-| 69 + some n, which is at least 69.
 
 
 -}
-type alias N69NatPlus more =
-    N68NatPlus (N1NatPlus more)
+type alias N69Plus more =
+    N68Plus (N1Plus more)
 
 
-{-| At least 70.
+{-| 70 + some n, which is at least 70.
 
 
 -}
-type alias N70NatPlus more =
-    N69NatPlus (N1NatPlus more)
+type alias N70Plus more =
+    N69Plus (N1Plus more)
 
 
-{-| At least 71.
+{-| 71 + some n, which is at least 71.
 
 
 -}
-type alias N71NatPlus more =
-    N70NatPlus (N1NatPlus more)
+type alias N71Plus more =
+    N70Plus (N1Plus more)
 
 
-{-| At least 72.
+{-| 72 + some n, which is at least 72.
 
 
 -}
-type alias N72NatPlus more =
-    N71NatPlus (N1NatPlus more)
+type alias N72Plus more =
+    N71Plus (N1Plus more)
 
 
-{-| At least 73.
+{-| 73 + some n, which is at least 73.
 
 
 -}
-type alias N73NatPlus more =
-    N72NatPlus (N1NatPlus more)
+type alias N73Plus more =
+    N72Plus (N1Plus more)
 
 
-{-| At least 74.
+{-| 74 + some n, which is at least 74.
 
 
 -}
-type alias N74NatPlus more =
-    N73NatPlus (N1NatPlus more)
+type alias N74Plus more =
+    N73Plus (N1Plus more)
 
 
-{-| At least 75.
+{-| 75 + some n, which is at least 75.
 
 
 -}
-type alias N75NatPlus more =
-    N74NatPlus (N1NatPlus more)
+type alias N75Plus more =
+    N74Plus (N1Plus more)
 
 
-{-| At least 76.
+{-| 76 + some n, which is at least 76.
 
 
 -}
-type alias N76NatPlus more =
-    N75NatPlus (N1NatPlus more)
+type alias N76Plus more =
+    N75Plus (N1Plus more)
 
 
-{-| At least 77.
+{-| 77 + some n, which is at least 77.
 
 
 -}
-type alias N77NatPlus more =
-    N76NatPlus (N1NatPlus more)
+type alias N77Plus more =
+    N76Plus (N1Plus more)
 
 
-{-| At least 78.
+{-| 78 + some n, which is at least 78.
 
 
 -}
-type alias N78NatPlus more =
-    N77NatPlus (N1NatPlus more)
+type alias N78Plus more =
+    N77Plus (N1Plus more)
 
 
-{-| At least 79.
+{-| 79 + some n, which is at least 79.
 
 
 -}
-type alias N79NatPlus more =
-    N78NatPlus (N1NatPlus more)
+type alias N79Plus more =
+    N78Plus (N1Plus more)
 
 
-{-| At least 80.
+{-| 80 + some n, which is at least 80.
 
 
 -}
-type alias N80NatPlus more =
-    N79NatPlus (N1NatPlus more)
+type alias N80Plus more =
+    N79Plus (N1Plus more)
 
 
-{-| At least 81.
+{-| 81 + some n, which is at least 81.
 
 
 -}
-type alias N81NatPlus more =
-    N80NatPlus (N1NatPlus more)
+type alias N81Plus more =
+    N80Plus (N1Plus more)
 
 
-{-| At least 82.
+{-| 82 + some n, which is at least 82.
 
 
 -}
-type alias N82NatPlus more =
-    N81NatPlus (N1NatPlus more)
+type alias N82Plus more =
+    N81Plus (N1Plus more)
 
 
-{-| At least 83.
+{-| 83 + some n, which is at least 83.
 
 
 -}
-type alias N83NatPlus more =
-    N82NatPlus (N1NatPlus more)
+type alias N83Plus more =
+    N82Plus (N1Plus more)
 
 
-{-| At least 84.
+{-| 84 + some n, which is at least 84.
 
 
 -}
-type alias N84NatPlus more =
-    N83NatPlus (N1NatPlus more)
+type alias N84Plus more =
+    N83Plus (N1Plus more)
 
 
-{-| At least 85.
+{-| 85 + some n, which is at least 85.
 
 
 -}
-type alias N85NatPlus more =
-    N84NatPlus (N1NatPlus more)
+type alias N85Plus more =
+    N84Plus (N1Plus more)
 
 
-{-| At least 86.
+{-| 86 + some n, which is at least 86.
 
 
 -}
-type alias N86NatPlus more =
-    N85NatPlus (N1NatPlus more)
+type alias N86Plus more =
+    N85Plus (N1Plus more)
 
 
-{-| At least 87.
+{-| 87 + some n, which is at least 87.
 
 
 -}
-type alias N87NatPlus more =
-    N86NatPlus (N1NatPlus more)
+type alias N87Plus more =
+    N86Plus (N1Plus more)
 
 
-{-| At least 88.
+{-| 88 + some n, which is at least 88.
 
 
 -}
-type alias N88NatPlus more =
-    N87NatPlus (N1NatPlus more)
+type alias N88Plus more =
+    N87Plus (N1Plus more)
 
 
-{-| At least 89.
+{-| 89 + some n, which is at least 89.
 
 
 -}
-type alias N89NatPlus more =
-    N88NatPlus (N1NatPlus more)
+type alias N89Plus more =
+    N88Plus (N1Plus more)
 
 
-{-| At least 90.
+{-| 90 + some n, which is at least 90.
 
 
 -}
-type alias N90NatPlus more =
-    N89NatPlus (N1NatPlus more)
+type alias N90Plus more =
+    N89Plus (N1Plus more)
 
 
-{-| At least 91.
+{-| 91 + some n, which is at least 91.
 
 
 -}
-type alias N91NatPlus more =
-    N90NatPlus (N1NatPlus more)
+type alias N91Plus more =
+    N90Plus (N1Plus more)
 
 
-{-| At least 92.
+{-| 92 + some n, which is at least 92.
 
 
 -}
-type alias N92NatPlus more =
-    N91NatPlus (N1NatPlus more)
+type alias N92Plus more =
+    N91Plus (N1Plus more)
 
 
-{-| At least 93.
+{-| 93 + some n, which is at least 93.
 
 
 -}
-type alias N93NatPlus more =
-    N92NatPlus (N1NatPlus more)
+type alias N93Plus more =
+    N92Plus (N1Plus more)
 
 
-{-| At least 94.
+{-| 94 + some n, which is at least 94.
 
 
 -}
-type alias N94NatPlus more =
-    N93NatPlus (N1NatPlus more)
+type alias N94Plus more =
+    N93Plus (N1Plus more)
 
 
-{-| At least 95.
+{-| 95 + some n, which is at least 95.
 
 
 -}
-type alias N95NatPlus more =
-    N94NatPlus (N1NatPlus more)
+type alias N95Plus more =
+    N94Plus (N1Plus more)
 
 
-{-| At least 96.
+{-| 96 + some n, which is at least 96.
 
 
 -}
-type alias N96NatPlus more =
-    N95NatPlus (N1NatPlus more)
+type alias N96Plus more =
+    N95Plus (N1Plus more)
 
 
-{-| At least 97.
+{-| 97 + some n, which is at least 97.
 
 
 -}
-type alias N97NatPlus more =
-    N96NatPlus (N1NatPlus more)
+type alias N97Plus more =
+    N96Plus (N1Plus more)
 
 
-{-| At least 98.
+{-| 98 + some n, which is at least 98.
 
 
 -}
-type alias N98NatPlus more =
-    N97NatPlus (N1NatPlus more)
+type alias N98Plus more =
+    N97Plus (N1Plus more)
 
 
-{-| At least 99.
+{-| 99 + some n, which is at least 99.
 
 
 -}
-type alias N99NatPlus more =
-    N98NatPlus (N1NatPlus more)
+type alias N99Plus more =
+    N98Plus (N1Plus more)
 
 
-{-| At least 100.
+{-| 100 + some n, which is at least 100.
 
 
 -}
-type alias N100NatPlus more =
-    N99NatPlus (N1NatPlus more)
+type alias N100Plus more =
+    N99Plus (N1Plus more)
 
 
-{-| At least 101.
+{-| 101 + some n, which is at least 101.
 
 
 -}
-type alias N101NatPlus more =
-    N100NatPlus (N1NatPlus more)
+type alias N101Plus more =
+    N100Plus (N1Plus more)
 
 
-{-| At least 102.
+{-| 102 + some n, which is at least 102.
 
 
 -}
-type alias N102NatPlus more =
-    N101NatPlus (N1NatPlus more)
+type alias N102Plus more =
+    N101Plus (N1Plus more)
 
 
-{-| At least 103.
+{-| 103 + some n, which is at least 103.
 
 
 -}
-type alias N103NatPlus more =
-    N102NatPlus (N1NatPlus more)
+type alias N103Plus more =
+    N102Plus (N1Plus more)
 
 
-{-| At least 104.
+{-| 104 + some n, which is at least 104.
 
 
 -}
-type alias N104NatPlus more =
-    N103NatPlus (N1NatPlus more)
+type alias N104Plus more =
+    N103Plus (N1Plus more)
 
 
-{-| At least 105.
+{-| 105 + some n, which is at least 105.
 
 
 -}
-type alias N105NatPlus more =
-    N104NatPlus (N1NatPlus more)
+type alias N105Plus more =
+    N104Plus (N1Plus more)
 
 
-{-| At least 106.
+{-| 106 + some n, which is at least 106.
 
 
 -}
-type alias N106NatPlus more =
-    N105NatPlus (N1NatPlus more)
+type alias N106Plus more =
+    N105Plus (N1Plus more)
 
 
-{-| At least 107.
+{-| 107 + some n, which is at least 107.
 
 
 -}
-type alias N107NatPlus more =
-    N106NatPlus (N1NatPlus more)
+type alias N107Plus more =
+    N106Plus (N1Plus more)
 
 
-{-| At least 108.
+{-| 108 + some n, which is at least 108.
 
 
 -}
-type alias N108NatPlus more =
-    N107NatPlus (N1NatPlus more)
+type alias N108Plus more =
+    N107Plus (N1Plus more)
 
 
-{-| At least 109.
+{-| 109 + some n, which is at least 109.
 
 
 -}
-type alias N109NatPlus more =
-    N108NatPlus (N1NatPlus more)
+type alias N109Plus more =
+    N108Plus (N1Plus more)
 
 
-{-| At least 110.
+{-| 110 + some n, which is at least 110.
 
 
 -}
-type alias N110NatPlus more =
-    N109NatPlus (N1NatPlus more)
+type alias N110Plus more =
+    N109Plus (N1Plus more)
 
 
-{-| At least 111.
+{-| 111 + some n, which is at least 111.
 
 
 -}
-type alias N111NatPlus more =
-    N110NatPlus (N1NatPlus more)
+type alias N111Plus more =
+    N110Plus (N1Plus more)
 
 
-{-| At least 112.
+{-| 112 + some n, which is at least 112.
 
 
 -}
-type alias N112NatPlus more =
-    N111NatPlus (N1NatPlus more)
+type alias N112Plus more =
+    N111Plus (N1Plus more)
 
 
-{-| At least 113.
+{-| 113 + some n, which is at least 113.
 
 
 -}
-type alias N113NatPlus more =
-    N112NatPlus (N1NatPlus more)
+type alias N113Plus more =
+    N112Plus (N1Plus more)
 
 
-{-| At least 114.
+{-| 114 + some n, which is at least 114.
 
 
 -}
-type alias N114NatPlus more =
-    N113NatPlus (N1NatPlus more)
+type alias N114Plus more =
+    N113Plus (N1Plus more)
 
 
-{-| At least 115.
+{-| 115 + some n, which is at least 115.
 
 
 -}
-type alias N115NatPlus more =
-    N114NatPlus (N1NatPlus more)
+type alias N115Plus more =
+    N114Plus (N1Plus more)
 
 
-{-| At least 116.
+{-| 116 + some n, which is at least 116.
 
 
 -}
-type alias N116NatPlus more =
-    N115NatPlus (N1NatPlus more)
+type alias N116Plus more =
+    N115Plus (N1Plus more)
 
 
-{-| At least 117.
+{-| 117 + some n, which is at least 117.
 
 
 -}
-type alias N117NatPlus more =
-    N116NatPlus (N1NatPlus more)
+type alias N117Plus more =
+    N116Plus (N1Plus more)
 
 
-{-| At least 118.
+{-| 118 + some n, which is at least 118.
 
 
 -}
-type alias N118NatPlus more =
-    N117NatPlus (N1NatPlus more)
+type alias N118Plus more =
+    N117Plus (N1Plus more)
 
 
-{-| At least 119.
+{-| 119 + some n, which is at least 119.
 
 
 -}
-type alias N119NatPlus more =
-    N118NatPlus (N1NatPlus more)
+type alias N119Plus more =
+    N118Plus (N1Plus more)
 
 
-{-| At least 120.
+{-| 120 + some n, which is at least 120.
 
 
 -}
-type alias N120NatPlus more =
-    N119NatPlus (N1NatPlus more)
+type alias N120Plus more =
+    N119Plus (N1Plus more)
 
 
-{-| At least 121.
+{-| 121 + some n, which is at least 121.
 
 
 -}
-type alias N121NatPlus more =
-    N120NatPlus (N1NatPlus more)
+type alias N121Plus more =
+    N120Plus (N1Plus more)
 
 
-{-| At least 122.
+{-| 122 + some n, which is at least 122.
 
 
 -}
-type alias N122NatPlus more =
-    N121NatPlus (N1NatPlus more)
+type alias N122Plus more =
+    N121Plus (N1Plus more)
 
 
-{-| At least 123.
+{-| 123 + some n, which is at least 123.
 
 
 -}
-type alias N123NatPlus more =
-    N122NatPlus (N1NatPlus more)
+type alias N123Plus more =
+    N122Plus (N1Plus more)
 
 
-{-| At least 124.
+{-| 124 + some n, which is at least 124.
 
 
 -}
-type alias N124NatPlus more =
-    N123NatPlus (N1NatPlus more)
+type alias N124Plus more =
+    N123Plus (N1Plus more)
 
 
-{-| At least 125.
+{-| 125 + some n, which is at least 125.
 
 
 -}
-type alias N125NatPlus more =
-    N124NatPlus (N1NatPlus more)
+type alias N125Plus more =
+    N124Plus (N1Plus more)
 
 
-{-| At least 126.
+{-| 126 + some n, which is at least 126.
 
 
 -}
-type alias N126NatPlus more =
-    N125NatPlus (N1NatPlus more)
+type alias N126Plus more =
+    N125Plus (N1Plus more)
 
 
-{-| At least 127.
+{-| 127 + some n, which is at least 127.
 
 
 -}
-type alias N127NatPlus more =
-    N126NatPlus (N1NatPlus more)
+type alias N127Plus more =
+    N126Plus (N1Plus more)
 
 
-{-| At least 128.
+{-| 128 + some n, which is at least 128.
 
 
 -}
-type alias N128NatPlus more =
-    N127NatPlus (N1NatPlus more)
+type alias N128Plus more =
+    N127Plus (N1Plus more)
 
 
-{-| At least 129.
+{-| 129 + some n, which is at least 129.
 
 
 -}
-type alias N129NatPlus more =
-    N128NatPlus (N1NatPlus more)
+type alias N129Plus more =
+    N128Plus (N1Plus more)
 
 
-{-| At least 130.
+{-| 130 + some n, which is at least 130.
 
 
 -}
-type alias N130NatPlus more =
-    N129NatPlus (N1NatPlus more)
+type alias N130Plus more =
+    N129Plus (N1Plus more)
 
 
-{-| At least 131.
+{-| 131 + some n, which is at least 131.
 
 
 -}
-type alias N131NatPlus more =
-    N130NatPlus (N1NatPlus more)
+type alias N131Plus more =
+    N130Plus (N1Plus more)
 
 
-{-| At least 132.
+{-| 132 + some n, which is at least 132.
 
 
 -}
-type alias N132NatPlus more =
-    N131NatPlus (N1NatPlus more)
+type alias N132Plus more =
+    N131Plus (N1Plus more)
 
 
-{-| At least 133.
+{-| 133 + some n, which is at least 133.
 
 
 -}
-type alias N133NatPlus more =
-    N132NatPlus (N1NatPlus more)
+type alias N133Plus more =
+    N132Plus (N1Plus more)
 
 
-{-| At least 134.
+{-| 134 + some n, which is at least 134.
 
 
 -}
-type alias N134NatPlus more =
-    N133NatPlus (N1NatPlus more)
+type alias N134Plus more =
+    N133Plus (N1Plus more)
 
 
-{-| At least 135.
+{-| 135 + some n, which is at least 135.
 
 
 -}
-type alias N135NatPlus more =
-    N134NatPlus (N1NatPlus more)
+type alias N135Plus more =
+    N134Plus (N1Plus more)
 
 
-{-| At least 136.
+{-| 136 + some n, which is at least 136.
 
 
 -}
-type alias N136NatPlus more =
-    N135NatPlus (N1NatPlus more)
+type alias N136Plus more =
+    N135Plus (N1Plus more)
 
 
-{-| At least 137.
+{-| 137 + some n, which is at least 137.
 
 
 -}
-type alias N137NatPlus more =
-    N136NatPlus (N1NatPlus more)
+type alias N137Plus more =
+    N136Plus (N1Plus more)
 
 
-{-| At least 138.
+{-| 138 + some n, which is at least 138.
 
 
 -}
-type alias N138NatPlus more =
-    N137NatPlus (N1NatPlus more)
+type alias N138Plus more =
+    N137Plus (N1Plus more)
 
 
-{-| At least 139.
+{-| 139 + some n, which is at least 139.
 
 
 -}
-type alias N139NatPlus more =
-    N138NatPlus (N1NatPlus more)
+type alias N139Plus more =
+    N138Plus (N1Plus more)
 
 
-{-| At least 140.
+{-| 140 + some n, which is at least 140.
 
 
 -}
-type alias N140NatPlus more =
-    N139NatPlus (N1NatPlus more)
+type alias N140Plus more =
+    N139Plus (N1Plus more)
 
 
-{-| At least 141.
+{-| 141 + some n, which is at least 141.
 
 
 -}
-type alias N141NatPlus more =
-    N140NatPlus (N1NatPlus more)
+type alias N141Plus more =
+    N140Plus (N1Plus more)
 
 
-{-| At least 142.
+{-| 142 + some n, which is at least 142.
 
 
 -}
-type alias N142NatPlus more =
-    N141NatPlus (N1NatPlus more)
+type alias N142Plus more =
+    N141Plus (N1Plus more)
 
 
-{-| At least 143.
+{-| 143 + some n, which is at least 143.
 
 
 -}
-type alias N143NatPlus more =
-    N142NatPlus (N1NatPlus more)
+type alias N143Plus more =
+    N142Plus (N1Plus more)
 
 
-{-| At least 144.
+{-| 144 + some n, which is at least 144.
 
 
 -}
-type alias N144NatPlus more =
-    N143NatPlus (N1NatPlus more)
+type alias N144Plus more =
+    N143Plus (N1Plus more)
 
 
-{-| At least 145.
+{-| 145 + some n, which is at least 145.
 
 
 -}
-type alias N145NatPlus more =
-    N144NatPlus (N1NatPlus more)
+type alias N145Plus more =
+    N144Plus (N1Plus more)
 
 
-{-| At least 146.
+{-| 146 + some n, which is at least 146.
 
 
 -}
-type alias N146NatPlus more =
-    N145NatPlus (N1NatPlus more)
+type alias N146Plus more =
+    N145Plus (N1Plus more)
 
 
-{-| At least 147.
+{-| 147 + some n, which is at least 147.
 
 
 -}
-type alias N147NatPlus more =
-    N146NatPlus (N1NatPlus more)
+type alias N147Plus more =
+    N146Plus (N1Plus more)
 
 
-{-| At least 148.
+{-| 148 + some n, which is at least 148.
 
 
 -}
-type alias N148NatPlus more =
-    N147NatPlus (N1NatPlus more)
+type alias N148Plus more =
+    N147Plus (N1Plus more)
 
 
-{-| At least 149.
+{-| 149 + some n, which is at least 149.
 
 
 -}
-type alias N149NatPlus more =
-    N148NatPlus (N1NatPlus more)
+type alias N149Plus more =
+    N148Plus (N1Plus more)
 
 
-{-| At least 150.
+{-| 150 + some n, which is at least 150.
 
 
 -}
-type alias N150NatPlus more =
-    N149NatPlus (N1NatPlus more)
+type alias N150Plus more =
+    N149Plus (N1Plus more)
 
 
-{-| At least 151.
+{-| 151 + some n, which is at least 151.
 
 
 -}
-type alias N151NatPlus more =
-    N150NatPlus (N1NatPlus more)
+type alias N151Plus more =
+    N150Plus (N1Plus more)
 
 
-{-| At least 152.
+{-| 152 + some n, which is at least 152.
 
 
 -}
-type alias N152NatPlus more =
-    N151NatPlus (N1NatPlus more)
+type alias N152Plus more =
+    N151Plus (N1Plus more)
 
 
-{-| At least 153.
+{-| 153 + some n, which is at least 153.
 
 
 -}
-type alias N153NatPlus more =
-    N152NatPlus (N1NatPlus more)
+type alias N153Plus more =
+    N152Plus (N1Plus more)
 
 
-{-| At least 154.
+{-| 154 + some n, which is at least 154.
 
 
 -}
-type alias N154NatPlus more =
-    N153NatPlus (N1NatPlus more)
+type alias N154Plus more =
+    N153Plus (N1Plus more)
 
 
-{-| At least 155.
+{-| 155 + some n, which is at least 155.
 
 
 -}
-type alias N155NatPlus more =
-    N154NatPlus (N1NatPlus more)
+type alias N155Plus more =
+    N154Plus (N1Plus more)
 
 
-{-| At least 156.
+{-| 156 + some n, which is at least 156.
 
 
 -}
-type alias N156NatPlus more =
-    N155NatPlus (N1NatPlus more)
+type alias N156Plus more =
+    N155Plus (N1Plus more)
 
 
-{-| At least 157.
+{-| 157 + some n, which is at least 157.
 
 
 -}
-type alias N157NatPlus more =
-    N156NatPlus (N1NatPlus more)
+type alias N157Plus more =
+    N156Plus (N1Plus more)
 
 
-{-| At least 158.
+{-| 158 + some n, which is at least 158.
 
 
 -}
-type alias N158NatPlus more =
-    N157NatPlus (N1NatPlus more)
+type alias N158Plus more =
+    N157Plus (N1Plus more)
 
 
-{-| At least 159.
+{-| 159 + some n, which is at least 159.
 
 
 -}
-type alias N159NatPlus more =
-    N158NatPlus (N1NatPlus more)
+type alias N159Plus more =
+    N158Plus (N1Plus more)
 
 
-{-| At least 160.
+{-| 160 + some n, which is at least 160.
 
 
 -}
-type alias N160NatPlus more =
-    N159NatPlus (N1NatPlus more)
+type alias N160Plus more =
+    N159Plus (N1Plus more)
 
 
-{-| At least 161.
+{-| 161 + some n, which is at least 161.
 
 
 -}
-type alias N161NatPlus more =
-    N160NatPlus (N1NatPlus more)
+type alias N161Plus more =
+    N160Plus (N1Plus more)
 
 
-{-| At least 162.
+{-| 162 + some n, which is at least 162.
 
 
 -}
-type alias N162NatPlus more =
-    N161NatPlus (N1NatPlus more)
+type alias N162Plus more =
+    N161Plus (N1Plus more)
 
 
-{-| At least 163.
+{-| 163 + some n, which is at least 163.
 
 
 -}
-type alias N163NatPlus more =
-    N162NatPlus (N1NatPlus more)
+type alias N163Plus more =
+    N162Plus (N1Plus more)
 
 
-{-| At least 164.
+{-| 164 + some n, which is at least 164.
 
 
 -}
-type alias N164NatPlus more =
-    N163NatPlus (N1NatPlus more)
+type alias N164Plus more =
+    N163Plus (N1Plus more)
 
 
-{-| At least 165.
+{-| 165 + some n, which is at least 165.
 
 
 -}
-type alias N165NatPlus more =
-    N164NatPlus (N1NatPlus more)
+type alias N165Plus more =
+    N164Plus (N1Plus more)
 
 
-{-| At least 166.
+{-| 166 + some n, which is at least 166.
 
 
 -}
-type alias N166NatPlus more =
-    N165NatPlus (N1NatPlus more)
+type alias N166Plus more =
+    N165Plus (N1Plus more)
 
 
-{-| At least 167.
+{-| 167 + some n, which is at least 167.
 
 
 -}
-type alias N167NatPlus more =
-    N166NatPlus (N1NatPlus more)
+type alias N167Plus more =
+    N166Plus (N1Plus more)
 
 
-{-| At least 168.
+{-| 168 + some n, which is at least 168.
 
 
 -}
-type alias N168NatPlus more =
-    N167NatPlus (N1NatPlus more)
+type alias N168Plus more =
+    N167Plus (N1Plus more)
 
 
-{-| At least 169.
+{-| 169 + some n, which is at least 169.
 
 
 -}
-type alias N169NatPlus more =
-    N168NatPlus (N1NatPlus more)
+type alias N169Plus more =
+    N168Plus (N1Plus more)
 
 
-{-| At least 170.
+{-| 170 + some n, which is at least 170.
 
 
 -}
-type alias N170NatPlus more =
-    N169NatPlus (N1NatPlus more)
+type alias N170Plus more =
+    N169Plus (N1Plus more)
 
 
-{-| At least 171.
+{-| 171 + some n, which is at least 171.
 
 
 -}
-type alias N171NatPlus more =
-    N170NatPlus (N1NatPlus more)
+type alias N171Plus more =
+    N170Plus (N1Plus more)
 
 
-{-| At least 172.
+{-| 172 + some n, which is at least 172.
 
 
 -}
-type alias N172NatPlus more =
-    N171NatPlus (N1NatPlus more)
+type alias N172Plus more =
+    N171Plus (N1Plus more)
 
 
-{-| At least 173.
+{-| 173 + some n, which is at least 173.
 
 
 -}
-type alias N173NatPlus more =
-    N172NatPlus (N1NatPlus more)
+type alias N173Plus more =
+    N172Plus (N1Plus more)
 
 
-{-| At least 174.
+{-| 174 + some n, which is at least 174.
 
 
 -}
-type alias N174NatPlus more =
-    N173NatPlus (N1NatPlus more)
+type alias N174Plus more =
+    N173Plus (N1Plus more)
 
 
-{-| At least 175.
+{-| 175 + some n, which is at least 175.
 
 
 -}
-type alias N175NatPlus more =
-    N174NatPlus (N1NatPlus more)
+type alias N175Plus more =
+    N174Plus (N1Plus more)
 
 
-{-| At least 176.
+{-| 176 + some n, which is at least 176.
 
 
 -}
-type alias N176NatPlus more =
-    N175NatPlus (N1NatPlus more)
+type alias N176Plus more =
+    N175Plus (N1Plus more)
 
 
-{-| At least 177.
+{-| 177 + some n, which is at least 177.
 
 
 -}
-type alias N177NatPlus more =
-    N176NatPlus (N1NatPlus more)
+type alias N177Plus more =
+    N176Plus (N1Plus more)
 
 
-{-| At least 178.
+{-| 178 + some n, which is at least 178.
 
 
 -}
-type alias N178NatPlus more =
-    N177NatPlus (N1NatPlus more)
+type alias N178Plus more =
+    N177Plus (N1Plus more)
 
 
-{-| At least 179.
+{-| 179 + some n, which is at least 179.
 
 
 -}
-type alias N179NatPlus more =
-    N178NatPlus (N1NatPlus more)
+type alias N179Plus more =
+    N178Plus (N1Plus more)
 
 
-{-| At least 180.
+{-| 180 + some n, which is at least 180.
 
 
 -}
-type alias N180NatPlus more =
-    N179NatPlus (N1NatPlus more)
+type alias N180Plus more =
+    N179Plus (N1Plus more)
 
 
-{-| At least 181.
+{-| 181 + some n, which is at least 181.
 
 
 -}
-type alias N181NatPlus more =
-    N180NatPlus (N1NatPlus more)
+type alias N181Plus more =
+    N180Plus (N1Plus more)
 
 
-{-| At least 182.
+{-| 182 + some n, which is at least 182.
 
 
 -}
-type alias N182NatPlus more =
-    N181NatPlus (N1NatPlus more)
+type alias N182Plus more =
+    N181Plus (N1Plus more)
 
 
-{-| At least 183.
+{-| 183 + some n, which is at least 183.
 
 
 -}
-type alias N183NatPlus more =
-    N182NatPlus (N1NatPlus more)
+type alias N183Plus more =
+    N182Plus (N1Plus more)
 
 
-{-| At least 184.
+{-| 184 + some n, which is at least 184.
 
 
 -}
-type alias N184NatPlus more =
-    N183NatPlus (N1NatPlus more)
+type alias N184Plus more =
+    N183Plus (N1Plus more)
 
 
-{-| At least 185.
+{-| 185 + some n, which is at least 185.
 
 
 -}
-type alias N185NatPlus more =
-    N184NatPlus (N1NatPlus more)
+type alias N185Plus more =
+    N184Plus (N1Plus more)
 
 
-{-| At least 186.
+{-| 186 + some n, which is at least 186.
 
 
 -}
-type alias N186NatPlus more =
-    N185NatPlus (N1NatPlus more)
+type alias N186Plus more =
+    N185Plus (N1Plus more)
 
 
-{-| At least 187.
+{-| 187 + some n, which is at least 187.
 
 
 -}
-type alias N187NatPlus more =
-    N186NatPlus (N1NatPlus more)
+type alias N187Plus more =
+    N186Plus (N1Plus more)
 
 
-{-| At least 188.
+{-| 188 + some n, which is at least 188.
 
 
 -}
-type alias N188NatPlus more =
-    N187NatPlus (N1NatPlus more)
+type alias N188Plus more =
+    N187Plus (N1Plus more)
 
 
-{-| At least 189.
+{-| 189 + some n, which is at least 189.
 
 
 -}
-type alias N189NatPlus more =
-    N188NatPlus (N1NatPlus more)
+type alias N189Plus more =
+    N188Plus (N1Plus more)
 
 
-{-| At least 190.
+{-| 190 + some n, which is at least 190.
 
 
 -}
-type alias N190NatPlus more =
-    N189NatPlus (N1NatPlus more)
+type alias N190Plus more =
+    N189Plus (N1Plus more)
 
 
-{-| At least 191.
+{-| 191 + some n, which is at least 191.
 
 
 -}
-type alias N191NatPlus more =
-    N190NatPlus (N1NatPlus more)
+type alias N191Plus more =
+    N190Plus (N1Plus more)
 
 
-{-| At least 192.
+{-| 192 + some n, which is at least 192.
 
 
 -}
-type alias N192NatPlus more =
-    N191NatPlus (N1NatPlus more)
+type alias N192Plus more =
+    N191Plus (N1Plus more)
+
+
+type Z
+    = Z Never
 
 
 {-| Exact the natural number 0.
 
 
 -}
-type N0Nat
-    = N0Nat Never
+type alias N0 =
+    Z
 
 
 {-| Exact the natural number 1.
 
 
 -}
-type alias N1Nat =
-    N1NatPlus N0Nat
+type alias N1 =
+    N1Plus N0
 
 
 {-| Exact the natural number 2.
 
 
 -}
-type alias N2Nat =
-    N2NatPlus N0Nat
+type alias N2 =
+    N2Plus N0
 
 
 {-| Exact the natural number 3.
 
 
 -}
-type alias N3Nat =
-    N3NatPlus N0Nat
+type alias N3 =
+    N3Plus N0
 
 
 {-| Exact the natural number 4.
 
 
 -}
-type alias N4Nat =
-    N4NatPlus N0Nat
+type alias N4 =
+    N4Plus N0
 
 
 {-| Exact the natural number 5.
 
 
 -}
-type alias N5Nat =
-    N5NatPlus N0Nat
+type alias N5 =
+    N5Plus N0
 
 
 {-| Exact the natural number 6.
 
 
 -}
-type alias N6Nat =
-    N6NatPlus N0Nat
+type alias N6 =
+    N6Plus N0
 
 
 {-| Exact the natural number 7.
 
 
 -}
-type alias N7Nat =
-    N7NatPlus N0Nat
+type alias N7 =
+    N7Plus N0
 
 
 {-| Exact the natural number 8.
 
 
 -}
-type alias N8Nat =
-    N8NatPlus N0Nat
+type alias N8 =
+    N8Plus N0
 
 
 {-| Exact the natural number 9.
 
 
 -}
-type alias N9Nat =
-    N9NatPlus N0Nat
+type alias N9 =
+    N9Plus N0
 
 
 {-| Exact the natural number 10.
 
 
 -}
-type alias N10Nat =
-    N10NatPlus N0Nat
+type alias N10 =
+    N10Plus N0
 
 
 {-| Exact the natural number 11.
 
 
 -}
-type alias N11Nat =
-    N11NatPlus N0Nat
+type alias N11 =
+    N11Plus N0
 
 
 {-| Exact the natural number 12.
 
 
 -}
-type alias N12Nat =
-    N12NatPlus N0Nat
+type alias N12 =
+    N12Plus N0
 
 
 {-| Exact the natural number 13.
 
 
 -}
-type alias N13Nat =
-    N13NatPlus N0Nat
+type alias N13 =
+    N13Plus N0
 
 
 {-| Exact the natural number 14.
 
 
 -}
-type alias N14Nat =
-    N14NatPlus N0Nat
+type alias N14 =
+    N14Plus N0
 
 
 {-| Exact the natural number 15.
 
 
 -}
-type alias N15Nat =
-    N15NatPlus N0Nat
+type alias N15 =
+    N15Plus N0
 
 
 {-| Exact the natural number 16.
 
 
 -}
-type alias N16Nat =
-    N16NatPlus N0Nat
+type alias N16 =
+    N16Plus N0
 
 
 {-| Exact the natural number 17.
 
 
 -}
-type alias N17Nat =
-    N17NatPlus N0Nat
+type alias N17 =
+    N17Plus N0
 
 
 {-| Exact the natural number 18.
 
 
 -}
-type alias N18Nat =
-    N18NatPlus N0Nat
+type alias N18 =
+    N18Plus N0
 
 
 {-| Exact the natural number 19.
 
 
 -}
-type alias N19Nat =
-    N19NatPlus N0Nat
+type alias N19 =
+    N19Plus N0
 
 
 {-| Exact the natural number 20.
 
 
 -}
-type alias N20Nat =
-    N20NatPlus N0Nat
+type alias N20 =
+    N20Plus N0
 
 
 {-| Exact the natural number 21.
 
 
 -}
-type alias N21Nat =
-    N21NatPlus N0Nat
+type alias N21 =
+    N21Plus N0
 
 
 {-| Exact the natural number 22.
 
 
 -}
-type alias N22Nat =
-    N22NatPlus N0Nat
+type alias N22 =
+    N22Plus N0
 
 
 {-| Exact the natural number 23.
 
 
 -}
-type alias N23Nat =
-    N23NatPlus N0Nat
+type alias N23 =
+    N23Plus N0
 
 
 {-| Exact the natural number 24.
 
 
 -}
-type alias N24Nat =
-    N24NatPlus N0Nat
+type alias N24 =
+    N24Plus N0
 
 
 {-| Exact the natural number 25.
 
 
 -}
-type alias N25Nat =
-    N25NatPlus N0Nat
+type alias N25 =
+    N25Plus N0
 
 
 {-| Exact the natural number 26.
 
 
 -}
-type alias N26Nat =
-    N26NatPlus N0Nat
+type alias N26 =
+    N26Plus N0
 
 
 {-| Exact the natural number 27.
 
 
 -}
-type alias N27Nat =
-    N27NatPlus N0Nat
+type alias N27 =
+    N27Plus N0
 
 
 {-| Exact the natural number 28.
 
 
 -}
-type alias N28Nat =
-    N28NatPlus N0Nat
+type alias N28 =
+    N28Plus N0
 
 
 {-| Exact the natural number 29.
 
 
 -}
-type alias N29Nat =
-    N29NatPlus N0Nat
+type alias N29 =
+    N29Plus N0
 
 
 {-| Exact the natural number 30.
 
 
 -}
-type alias N30Nat =
-    N30NatPlus N0Nat
+type alias N30 =
+    N30Plus N0
 
 
 {-| Exact the natural number 31.
 
 
 -}
-type alias N31Nat =
-    N31NatPlus N0Nat
+type alias N31 =
+    N31Plus N0
 
 
 {-| Exact the natural number 32.
 
 
 -}
-type alias N32Nat =
-    N32NatPlus N0Nat
+type alias N32 =
+    N32Plus N0
 
 
 {-| Exact the natural number 33.
 
 
 -}
-type alias N33Nat =
-    N33NatPlus N0Nat
+type alias N33 =
+    N33Plus N0
 
 
 {-| Exact the natural number 34.
 
 
 -}
-type alias N34Nat =
-    N34NatPlus N0Nat
+type alias N34 =
+    N34Plus N0
 
 
 {-| Exact the natural number 35.
 
 
 -}
-type alias N35Nat =
-    N35NatPlus N0Nat
+type alias N35 =
+    N35Plus N0
 
 
 {-| Exact the natural number 36.
 
 
 -}
-type alias N36Nat =
-    N36NatPlus N0Nat
+type alias N36 =
+    N36Plus N0
 
 
 {-| Exact the natural number 37.
 
 
 -}
-type alias N37Nat =
-    N37NatPlus N0Nat
+type alias N37 =
+    N37Plus N0
 
 
 {-| Exact the natural number 38.
 
 
 -}
-type alias N38Nat =
-    N38NatPlus N0Nat
+type alias N38 =
+    N38Plus N0
 
 
 {-| Exact the natural number 39.
 
 
 -}
-type alias N39Nat =
-    N39NatPlus N0Nat
+type alias N39 =
+    N39Plus N0
 
 
 {-| Exact the natural number 40.
 
 
 -}
-type alias N40Nat =
-    N40NatPlus N0Nat
+type alias N40 =
+    N40Plus N0
 
 
 {-| Exact the natural number 41.
 
 
 -}
-type alias N41Nat =
-    N41NatPlus N0Nat
+type alias N41 =
+    N41Plus N0
 
 
 {-| Exact the natural number 42.
 
 
 -}
-type alias N42Nat =
-    N42NatPlus N0Nat
+type alias N42 =
+    N42Plus N0
 
 
 {-| Exact the natural number 43.
 
 
 -}
-type alias N43Nat =
-    N43NatPlus N0Nat
+type alias N43 =
+    N43Plus N0
 
 
 {-| Exact the natural number 44.
 
 
 -}
-type alias N44Nat =
-    N44NatPlus N0Nat
+type alias N44 =
+    N44Plus N0
 
 
 {-| Exact the natural number 45.
 
 
 -}
-type alias N45Nat =
-    N45NatPlus N0Nat
+type alias N45 =
+    N45Plus N0
 
 
 {-| Exact the natural number 46.
 
 
 -}
-type alias N46Nat =
-    N46NatPlus N0Nat
+type alias N46 =
+    N46Plus N0
 
 
 {-| Exact the natural number 47.
 
 
 -}
-type alias N47Nat =
-    N47NatPlus N0Nat
+type alias N47 =
+    N47Plus N0
 
 
 {-| Exact the natural number 48.
 
 
 -}
-type alias N48Nat =
-    N48NatPlus N0Nat
+type alias N48 =
+    N48Plus N0
 
 
 {-| Exact the natural number 49.
 
 
 -}
-type alias N49Nat =
-    N49NatPlus N0Nat
+type alias N49 =
+    N49Plus N0
 
 
 {-| Exact the natural number 50.
 
 
 -}
-type alias N50Nat =
-    N50NatPlus N0Nat
+type alias N50 =
+    N50Plus N0
 
 
 {-| Exact the natural number 51.
 
 
 -}
-type alias N51Nat =
-    N51NatPlus N0Nat
+type alias N51 =
+    N51Plus N0
 
 
 {-| Exact the natural number 52.
 
 
 -}
-type alias N52Nat =
-    N52NatPlus N0Nat
+type alias N52 =
+    N52Plus N0
 
 
 {-| Exact the natural number 53.
 
 
 -}
-type alias N53Nat =
-    N53NatPlus N0Nat
+type alias N53 =
+    N53Plus N0
 
 
 {-| Exact the natural number 54.
 
 
 -}
-type alias N54Nat =
-    N54NatPlus N0Nat
+type alias N54 =
+    N54Plus N0
 
 
 {-| Exact the natural number 55.
 
 
 -}
-type alias N55Nat =
-    N55NatPlus N0Nat
+type alias N55 =
+    N55Plus N0
 
 
 {-| Exact the natural number 56.
 
 
 -}
-type alias N56Nat =
-    N56NatPlus N0Nat
+type alias N56 =
+    N56Plus N0
 
 
 {-| Exact the natural number 57.
 
 
 -}
-type alias N57Nat =
-    N57NatPlus N0Nat
+type alias N57 =
+    N57Plus N0
 
 
 {-| Exact the natural number 58.
 
 
 -}
-type alias N58Nat =
-    N58NatPlus N0Nat
+type alias N58 =
+    N58Plus N0
 
 
 {-| Exact the natural number 59.
 
 
 -}
-type alias N59Nat =
-    N59NatPlus N0Nat
+type alias N59 =
+    N59Plus N0
 
 
 {-| Exact the natural number 60.
 
 
 -}
-type alias N60Nat =
-    N60NatPlus N0Nat
+type alias N60 =
+    N60Plus N0
 
 
 {-| Exact the natural number 61.
 
 
 -}
-type alias N61Nat =
-    N61NatPlus N0Nat
+type alias N61 =
+    N61Plus N0
 
 
 {-| Exact the natural number 62.
 
 
 -}
-type alias N62Nat =
-    N62NatPlus N0Nat
+type alias N62 =
+    N62Plus N0
 
 
 {-| Exact the natural number 63.
 
 
 -}
-type alias N63Nat =
-    N63NatPlus N0Nat
+type alias N63 =
+    N63Plus N0
 
 
 {-| Exact the natural number 64.
 
 
 -}
-type alias N64Nat =
-    N64NatPlus N0Nat
+type alias N64 =
+    N64Plus N0
 
 
 {-| Exact the natural number 65.
 
 
 -}
-type alias N65Nat =
-    N65NatPlus N0Nat
+type alias N65 =
+    N65Plus N0
 
 
 {-| Exact the natural number 66.
 
 
 -}
-type alias N66Nat =
-    N66NatPlus N0Nat
+type alias N66 =
+    N66Plus N0
 
 
 {-| Exact the natural number 67.
 
 
 -}
-type alias N67Nat =
-    N67NatPlus N0Nat
+type alias N67 =
+    N67Plus N0
 
 
 {-| Exact the natural number 68.
 
 
 -}
-type alias N68Nat =
-    N68NatPlus N0Nat
+type alias N68 =
+    N68Plus N0
 
 
 {-| Exact the natural number 69.
 
 
 -}
-type alias N69Nat =
-    N69NatPlus N0Nat
+type alias N69 =
+    N69Plus N0
 
 
 {-| Exact the natural number 70.
 
 
 -}
-type alias N70Nat =
-    N70NatPlus N0Nat
+type alias N70 =
+    N70Plus N0
 
 
 {-| Exact the natural number 71.
 
 
 -}
-type alias N71Nat =
-    N71NatPlus N0Nat
+type alias N71 =
+    N71Plus N0
 
 
 {-| Exact the natural number 72.
 
 
 -}
-type alias N72Nat =
-    N72NatPlus N0Nat
+type alias N72 =
+    N72Plus N0
 
 
 {-| Exact the natural number 73.
 
 
 -}
-type alias N73Nat =
-    N73NatPlus N0Nat
+type alias N73 =
+    N73Plus N0
 
 
 {-| Exact the natural number 74.
 
 
 -}
-type alias N74Nat =
-    N74NatPlus N0Nat
+type alias N74 =
+    N74Plus N0
 
 
 {-| Exact the natural number 75.
 
 
 -}
-type alias N75Nat =
-    N75NatPlus N0Nat
+type alias N75 =
+    N75Plus N0
 
 
 {-| Exact the natural number 76.
 
 
 -}
-type alias N76Nat =
-    N76NatPlus N0Nat
+type alias N76 =
+    N76Plus N0
 
 
 {-| Exact the natural number 77.
 
 
 -}
-type alias N77Nat =
-    N77NatPlus N0Nat
+type alias N77 =
+    N77Plus N0
 
 
 {-| Exact the natural number 78.
 
 
 -}
-type alias N78Nat =
-    N78NatPlus N0Nat
+type alias N78 =
+    N78Plus N0
 
 
 {-| Exact the natural number 79.
 
 
 -}
-type alias N79Nat =
-    N79NatPlus N0Nat
+type alias N79 =
+    N79Plus N0
 
 
 {-| Exact the natural number 80.
 
 
 -}
-type alias N80Nat =
-    N80NatPlus N0Nat
+type alias N80 =
+    N80Plus N0
 
 
 {-| Exact the natural number 81.
 
 
 -}
-type alias N81Nat =
-    N81NatPlus N0Nat
+type alias N81 =
+    N81Plus N0
 
 
 {-| Exact the natural number 82.
 
 
 -}
-type alias N82Nat =
-    N82NatPlus N0Nat
+type alias N82 =
+    N82Plus N0
 
 
 {-| Exact the natural number 83.
 
 
 -}
-type alias N83Nat =
-    N83NatPlus N0Nat
+type alias N83 =
+    N83Plus N0
 
 
 {-| Exact the natural number 84.
 
 
 -}
-type alias N84Nat =
-    N84NatPlus N0Nat
+type alias N84 =
+    N84Plus N0
 
 
 {-| Exact the natural number 85.
 
 
 -}
-type alias N85Nat =
-    N85NatPlus N0Nat
+type alias N85 =
+    N85Plus N0
 
 
 {-| Exact the natural number 86.
 
 
 -}
-type alias N86Nat =
-    N86NatPlus N0Nat
+type alias N86 =
+    N86Plus N0
 
 
 {-| Exact the natural number 87.
 
 
 -}
-type alias N87Nat =
-    N87NatPlus N0Nat
+type alias N87 =
+    N87Plus N0
 
 
 {-| Exact the natural number 88.
 
 
 -}
-type alias N88Nat =
-    N88NatPlus N0Nat
+type alias N88 =
+    N88Plus N0
 
 
 {-| Exact the natural number 89.
 
 
 -}
-type alias N89Nat =
-    N89NatPlus N0Nat
+type alias N89 =
+    N89Plus N0
 
 
 {-| Exact the natural number 90.
 
 
 -}
-type alias N90Nat =
-    N90NatPlus N0Nat
+type alias N90 =
+    N90Plus N0
 
 
 {-| Exact the natural number 91.
 
 
 -}
-type alias N91Nat =
-    N91NatPlus N0Nat
+type alias N91 =
+    N91Plus N0
 
 
 {-| Exact the natural number 92.
 
 
 -}
-type alias N92Nat =
-    N92NatPlus N0Nat
+type alias N92 =
+    N92Plus N0
 
 
 {-| Exact the natural number 93.
 
 
 -}
-type alias N93Nat =
-    N93NatPlus N0Nat
+type alias N93 =
+    N93Plus N0
 
 
 {-| Exact the natural number 94.
 
 
 -}
-type alias N94Nat =
-    N94NatPlus N0Nat
+type alias N94 =
+    N94Plus N0
 
 
 {-| Exact the natural number 95.
 
 
 -}
-type alias N95Nat =
-    N95NatPlus N0Nat
+type alias N95 =
+    N95Plus N0
 
 
 {-| Exact the natural number 96.
 
 
 -}
-type alias N96Nat =
-    N96NatPlus N0Nat
+type alias N96 =
+    N96Plus N0
 
 
 {-| Exact the natural number 97.
 
 
 -}
-type alias N97Nat =
-    N97NatPlus N0Nat
+type alias N97 =
+    N97Plus N0
 
 
 {-| Exact the natural number 98.
 
 
 -}
-type alias N98Nat =
-    N98NatPlus N0Nat
+type alias N98 =
+    N98Plus N0
 
 
 {-| Exact the natural number 99.
 
 
 -}
-type alias N99Nat =
-    N99NatPlus N0Nat
+type alias N99 =
+    N99Plus N0
 
 
 {-| Exact the natural number 100.
 
 
 -}
-type alias N100Nat =
-    N100NatPlus N0Nat
+type alias N100 =
+    N100Plus N0
 
 
 {-| Exact the natural number 101.
 
 
 -}
-type alias N101Nat =
-    N101NatPlus N0Nat
+type alias N101 =
+    N101Plus N0
 
 
 {-| Exact the natural number 102.
 
 
 -}
-type alias N102Nat =
-    N102NatPlus N0Nat
+type alias N102 =
+    N102Plus N0
 
 
 {-| Exact the natural number 103.
 
 
 -}
-type alias N103Nat =
-    N103NatPlus N0Nat
+type alias N103 =
+    N103Plus N0
 
 
 {-| Exact the natural number 104.
 
 
 -}
-type alias N104Nat =
-    N104NatPlus N0Nat
+type alias N104 =
+    N104Plus N0
 
 
 {-| Exact the natural number 105.
 
 
 -}
-type alias N105Nat =
-    N105NatPlus N0Nat
+type alias N105 =
+    N105Plus N0
 
 
 {-| Exact the natural number 106.
 
 
 -}
-type alias N106Nat =
-    N106NatPlus N0Nat
+type alias N106 =
+    N106Plus N0
 
 
 {-| Exact the natural number 107.
 
 
 -}
-type alias N107Nat =
-    N107NatPlus N0Nat
+type alias N107 =
+    N107Plus N0
 
 
 {-| Exact the natural number 108.
 
 
 -}
-type alias N108Nat =
-    N108NatPlus N0Nat
+type alias N108 =
+    N108Plus N0
 
 
 {-| Exact the natural number 109.
 
 
 -}
-type alias N109Nat =
-    N109NatPlus N0Nat
+type alias N109 =
+    N109Plus N0
 
 
 {-| Exact the natural number 110.
 
 
 -}
-type alias N110Nat =
-    N110NatPlus N0Nat
+type alias N110 =
+    N110Plus N0
 
 
 {-| Exact the natural number 111.
 
 
 -}
-type alias N111Nat =
-    N111NatPlus N0Nat
+type alias N111 =
+    N111Plus N0
 
 
 {-| Exact the natural number 112.
 
 
 -}
-type alias N112Nat =
-    N112NatPlus N0Nat
+type alias N112 =
+    N112Plus N0
 
 
 {-| Exact the natural number 113.
 
 
 -}
-type alias N113Nat =
-    N113NatPlus N0Nat
+type alias N113 =
+    N113Plus N0
 
 
 {-| Exact the natural number 114.
 
 
 -}
-type alias N114Nat =
-    N114NatPlus N0Nat
+type alias N114 =
+    N114Plus N0
 
 
 {-| Exact the natural number 115.
 
 
 -}
-type alias N115Nat =
-    N115NatPlus N0Nat
+type alias N115 =
+    N115Plus N0
 
 
 {-| Exact the natural number 116.
 
 
 -}
-type alias N116Nat =
-    N116NatPlus N0Nat
+type alias N116 =
+    N116Plus N0
 
 
 {-| Exact the natural number 117.
 
 
 -}
-type alias N117Nat =
-    N117NatPlus N0Nat
+type alias N117 =
+    N117Plus N0
 
 
 {-| Exact the natural number 118.
 
 
 -}
-type alias N118Nat =
-    N118NatPlus N0Nat
+type alias N118 =
+    N118Plus N0
 
 
 {-| Exact the natural number 119.
 
 
 -}
-type alias N119Nat =
-    N119NatPlus N0Nat
+type alias N119 =
+    N119Plus N0
 
 
 {-| Exact the natural number 120.
 
 
 -}
-type alias N120Nat =
-    N120NatPlus N0Nat
+type alias N120 =
+    N120Plus N0
 
 
 {-| Exact the natural number 121.
 
 
 -}
-type alias N121Nat =
-    N121NatPlus N0Nat
+type alias N121 =
+    N121Plus N0
 
 
 {-| Exact the natural number 122.
 
 
 -}
-type alias N122Nat =
-    N122NatPlus N0Nat
+type alias N122 =
+    N122Plus N0
 
 
 {-| Exact the natural number 123.
 
 
 -}
-type alias N123Nat =
-    N123NatPlus N0Nat
+type alias N123 =
+    N123Plus N0
 
 
 {-| Exact the natural number 124.
 
 
 -}
-type alias N124Nat =
-    N124NatPlus N0Nat
+type alias N124 =
+    N124Plus N0
 
 
 {-| Exact the natural number 125.
 
 
 -}
-type alias N125Nat =
-    N125NatPlus N0Nat
+type alias N125 =
+    N125Plus N0
 
 
 {-| Exact the natural number 126.
 
 
 -}
-type alias N126Nat =
-    N126NatPlus N0Nat
+type alias N126 =
+    N126Plus N0
 
 
 {-| Exact the natural number 127.
 
 
 -}
-type alias N127Nat =
-    N127NatPlus N0Nat
+type alias N127 =
+    N127Plus N0
 
 
 {-| Exact the natural number 128.
 
 
 -}
-type alias N128Nat =
-    N128NatPlus N0Nat
+type alias N128 =
+    N128Plus N0
 
 
 {-| Exact the natural number 129.
 
 
 -}
-type alias N129Nat =
-    N129NatPlus N0Nat
+type alias N129 =
+    N129Plus N0
 
 
 {-| Exact the natural number 130.
 
 
 -}
-type alias N130Nat =
-    N130NatPlus N0Nat
+type alias N130 =
+    N130Plus N0
 
 
 {-| Exact the natural number 131.
 
 
 -}
-type alias N131Nat =
-    N131NatPlus N0Nat
+type alias N131 =
+    N131Plus N0
 
 
 {-| Exact the natural number 132.
 
 
 -}
-type alias N132Nat =
-    N132NatPlus N0Nat
+type alias N132 =
+    N132Plus N0
 
 
 {-| Exact the natural number 133.
 
 
 -}
-type alias N133Nat =
-    N133NatPlus N0Nat
+type alias N133 =
+    N133Plus N0
 
 
 {-| Exact the natural number 134.
 
 
 -}
-type alias N134Nat =
-    N134NatPlus N0Nat
+type alias N134 =
+    N134Plus N0
 
 
 {-| Exact the natural number 135.
 
 
 -}
-type alias N135Nat =
-    N135NatPlus N0Nat
+type alias N135 =
+    N135Plus N0
 
 
 {-| Exact the natural number 136.
 
 
 -}
-type alias N136Nat =
-    N136NatPlus N0Nat
+type alias N136 =
+    N136Plus N0
 
 
 {-| Exact the natural number 137.
 
 
 -}
-type alias N137Nat =
-    N137NatPlus N0Nat
+type alias N137 =
+    N137Plus N0
 
 
 {-| Exact the natural number 138.
 
 
 -}
-type alias N138Nat =
-    N138NatPlus N0Nat
+type alias N138 =
+    N138Plus N0
 
 
 {-| Exact the natural number 139.
 
 
 -}
-type alias N139Nat =
-    N139NatPlus N0Nat
+type alias N139 =
+    N139Plus N0
 
 
 {-| Exact the natural number 140.
 
 
 -}
-type alias N140Nat =
-    N140NatPlus N0Nat
+type alias N140 =
+    N140Plus N0
 
 
 {-| Exact the natural number 141.
 
 
 -}
-type alias N141Nat =
-    N141NatPlus N0Nat
+type alias N141 =
+    N141Plus N0
 
 
 {-| Exact the natural number 142.
 
 
 -}
-type alias N142Nat =
-    N142NatPlus N0Nat
+type alias N142 =
+    N142Plus N0
 
 
 {-| Exact the natural number 143.
 
 
 -}
-type alias N143Nat =
-    N143NatPlus N0Nat
+type alias N143 =
+    N143Plus N0
 
 
 {-| Exact the natural number 144.
 
 
 -}
-type alias N144Nat =
-    N144NatPlus N0Nat
+type alias N144 =
+    N144Plus N0
 
 
 {-| Exact the natural number 145.
 
 
 -}
-type alias N145Nat =
-    N145NatPlus N0Nat
+type alias N145 =
+    N145Plus N0
 
 
 {-| Exact the natural number 146.
 
 
 -}
-type alias N146Nat =
-    N146NatPlus N0Nat
+type alias N146 =
+    N146Plus N0
 
 
 {-| Exact the natural number 147.
 
 
 -}
-type alias N147Nat =
-    N147NatPlus N0Nat
+type alias N147 =
+    N147Plus N0
 
 
 {-| Exact the natural number 148.
 
 
 -}
-type alias N148Nat =
-    N148NatPlus N0Nat
+type alias N148 =
+    N148Plus N0
 
 
 {-| Exact the natural number 149.
 
 
 -}
-type alias N149Nat =
-    N149NatPlus N0Nat
+type alias N149 =
+    N149Plus N0
 
 
 {-| Exact the natural number 150.
 
 
 -}
-type alias N150Nat =
-    N150NatPlus N0Nat
+type alias N150 =
+    N150Plus N0
 
 
 {-| Exact the natural number 151.
 
 
 -}
-type alias N151Nat =
-    N151NatPlus N0Nat
+type alias N151 =
+    N151Plus N0
 
 
 {-| Exact the natural number 152.
 
 
 -}
-type alias N152Nat =
-    N152NatPlus N0Nat
+type alias N152 =
+    N152Plus N0
 
 
 {-| Exact the natural number 153.
 
 
 -}
-type alias N153Nat =
-    N153NatPlus N0Nat
+type alias N153 =
+    N153Plus N0
 
 
 {-| Exact the natural number 154.
 
 
 -}
-type alias N154Nat =
-    N154NatPlus N0Nat
+type alias N154 =
+    N154Plus N0
 
 
 {-| Exact the natural number 155.
 
 
 -}
-type alias N155Nat =
-    N155NatPlus N0Nat
+type alias N155 =
+    N155Plus N0
 
 
 {-| Exact the natural number 156.
 
 
 -}
-type alias N156Nat =
-    N156NatPlus N0Nat
+type alias N156 =
+    N156Plus N0
 
 
 {-| Exact the natural number 157.
 
 
 -}
-type alias N157Nat =
-    N157NatPlus N0Nat
+type alias N157 =
+    N157Plus N0
 
 
 {-| Exact the natural number 158.
 
 
 -}
-type alias N158Nat =
-    N158NatPlus N0Nat
+type alias N158 =
+    N158Plus N0
 
 
 {-| Exact the natural number 159.
 
 
 -}
-type alias N159Nat =
-    N159NatPlus N0Nat
+type alias N159 =
+    N159Plus N0
 
 
 {-| Exact the natural number 160.
 
 
 -}
-type alias N160Nat =
-    N160NatPlus N0Nat
+type alias N160 =
+    N160Plus N0
 
 
 {-| Exact the natural number 161.
 
 
 -}
-type alias N161Nat =
-    N161NatPlus N0Nat
+type alias N161 =
+    N161Plus N0
 
 
 {-| Exact the natural number 162.
 
 
 -}
-type alias N162Nat =
-    N162NatPlus N0Nat
+type alias N162 =
+    N162Plus N0
 
 
 {-| Exact the natural number 163.
 
 
 -}
-type alias N163Nat =
-    N163NatPlus N0Nat
+type alias N163 =
+    N163Plus N0
 
 
 {-| Exact the natural number 164.
 
 
 -}
-type alias N164Nat =
-    N164NatPlus N0Nat
+type alias N164 =
+    N164Plus N0
 
 
 {-| Exact the natural number 165.
 
 
 -}
-type alias N165Nat =
-    N165NatPlus N0Nat
+type alias N165 =
+    N165Plus N0
 
 
 {-| Exact the natural number 166.
 
 
 -}
-type alias N166Nat =
-    N166NatPlus N0Nat
+type alias N166 =
+    N166Plus N0
 
 
 {-| Exact the natural number 167.
 
 
 -}
-type alias N167Nat =
-    N167NatPlus N0Nat
+type alias N167 =
+    N167Plus N0
 
 
 {-| Exact the natural number 168.
 
 
 -}
-type alias N168Nat =
-    N168NatPlus N0Nat
+type alias N168 =
+    N168Plus N0
 
 
 {-| Exact the natural number 169.
 
 
 -}
-type alias N169Nat =
-    N169NatPlus N0Nat
+type alias N169 =
+    N169Plus N0
 
 
 {-| Exact the natural number 170.
 
 
 -}
-type alias N170Nat =
-    N170NatPlus N0Nat
+type alias N170 =
+    N170Plus N0
 
 
 {-| Exact the natural number 171.
 
 
 -}
-type alias N171Nat =
-    N171NatPlus N0Nat
+type alias N171 =
+    N171Plus N0
 
 
 {-| Exact the natural number 172.
 
 
 -}
-type alias N172Nat =
-    N172NatPlus N0Nat
+type alias N172 =
+    N172Plus N0
 
 
 {-| Exact the natural number 173.
 
 
 -}
-type alias N173Nat =
-    N173NatPlus N0Nat
+type alias N173 =
+    N173Plus N0
 
 
 {-| Exact the natural number 174.
 
 
 -}
-type alias N174Nat =
-    N174NatPlus N0Nat
+type alias N174 =
+    N174Plus N0
 
 
 {-| Exact the natural number 175.
 
 
 -}
-type alias N175Nat =
-    N175NatPlus N0Nat
+type alias N175 =
+    N175Plus N0
 
 
 {-| Exact the natural number 176.
 
 
 -}
-type alias N176Nat =
-    N176NatPlus N0Nat
+type alias N176 =
+    N176Plus N0
 
 
 {-| Exact the natural number 177.
 
 
 -}
-type alias N177Nat =
-    N177NatPlus N0Nat
+type alias N177 =
+    N177Plus N0
 
 
 {-| Exact the natural number 178.
 
 
 -}
-type alias N178Nat =
-    N178NatPlus N0Nat
+type alias N178 =
+    N178Plus N0
 
 
 {-| Exact the natural number 179.
 
 
 -}
-type alias N179Nat =
-    N179NatPlus N0Nat
+type alias N179 =
+    N179Plus N0
 
 
 {-| Exact the natural number 180.
 
 
 -}
-type alias N180Nat =
-    N180NatPlus N0Nat
+type alias N180 =
+    N180Plus N0
 
 
 {-| Exact the natural number 181.
 
 
 -}
-type alias N181Nat =
-    N181NatPlus N0Nat
+type alias N181 =
+    N181Plus N0
 
 
 {-| Exact the natural number 182.
 
 
 -}
-type alias N182Nat =
-    N182NatPlus N0Nat
+type alias N182 =
+    N182Plus N0
 
 
 {-| Exact the natural number 183.
 
 
 -}
-type alias N183Nat =
-    N183NatPlus N0Nat
+type alias N183 =
+    N183Plus N0
 
 
 {-| Exact the natural number 184.
 
 
 -}
-type alias N184Nat =
-    N184NatPlus N0Nat
+type alias N184 =
+    N184Plus N0
 
 
 {-| Exact the natural number 185.
 
 
 -}
-type alias N185Nat =
-    N185NatPlus N0Nat
+type alias N185 =
+    N185Plus N0
 
 
 {-| Exact the natural number 186.
 
 
 -}
-type alias N186Nat =
-    N186NatPlus N0Nat
+type alias N186 =
+    N186Plus N0
 
 
 {-| Exact the natural number 187.
 
 
 -}
-type alias N187Nat =
-    N187NatPlus N0Nat
+type alias N187 =
+    N187Plus N0
 
 
 {-| Exact the natural number 188.
 
 
 -}
-type alias N188Nat =
-    N188NatPlus N0Nat
+type alias N188 =
+    N188Plus N0
 
 
 {-| Exact the natural number 189.
 
 
 -}
-type alias N189Nat =
-    N189NatPlus N0Nat
+type alias N189 =
+    N189Plus N0
 
 
 {-| Exact the natural number 190.
 
 
 -}
-type alias N190Nat =
-    N190NatPlus N0Nat
+type alias N190 =
+    N190Plus N0
 
 
 {-| Exact the natural number 191.
 
 
 -}
-type alias N191Nat =
-    N191NatPlus N0Nat
+type alias N191 =
+    N191Plus N0
 
 
 {-| Exact the natural number 192.
 
 
 -}
-type alias N192Nat =
-    N192NatPlus N0Nat
+type alias N192 =
+    N192Plus N0
