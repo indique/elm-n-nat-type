@@ -82,8 +82,7 @@ Take a closer look at those packages to see `N.Nat.Type` in action!
 Sadly, while experimenting with type aliases, I discovered that type aliases can only expand so much.
 
 ```elm
-compilingProcessGetsKilled
-    : NaturalNumber (N100NatPlus N93Nat)
+compilingGetsKilled : NaturalNumber (N100Plus N93)
 ```
 
 If a type alias is not fully expanded after _192_ tries, there seems to be a hard limit
