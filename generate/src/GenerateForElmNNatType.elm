@@ -225,7 +225,7 @@ nNatTypeModule =
           , packageExposedAliasDecl NNatTypeAtLeast
                 [ markdown "1 + some n, which is at least 1."
                 ]
-                "N1Plus"
+                "Nat1Plus"
                 [ "more" ]
                 (typed "S" [ typeVar "more" ])
           ]
@@ -235,9 +235,9 @@ nNatTypeModule =
                     packageExposedAliasDecl NNatTypeAtLeast
                         [ markdown (String.fromInt n ++ " + some n, which is at least " ++ String.fromInt n ++ ".")
                         ]
-                        ("N" ++ String.fromInt n ++ "Plus")
+                        ("Nat" ++ String.fromInt n ++ "Plus")
                         [ "more" ]
-                        (typed ("N" ++ String.fromInt (n - 1) ++ "Plus")
+                        (typed ("Nat" ++ String.fromInt (n - 1) ++ "Plus")
                             [ typed "S" [ typeVar "more" ] ]
                         )
                 )
@@ -247,7 +247,7 @@ nNatTypeModule =
           , packageExposedAliasDecl NNatTypeExact
                 [ markdown "Exact the natural number 0."
                 ]
-                "N0"
+                "Nat0"
                 []
                 (typed "Z" [])
           ]
@@ -257,9 +257,9 @@ nNatTypeModule =
                     packageExposedAliasDecl NNatTypeExact
                         [ markdown ("Exact the natural number " ++ String.fromInt n ++ ".")
                         ]
-                        ("N" ++ String.fromInt n)
+                        ("Nat" ++ String.fromInt n)
                         []
-                        (typed ("N" ++ String.fromInt n ++ "Plus")
+                        (typed ("Nat" ++ String.fromInt n ++ "Plus")
                             [ typed "Z" [] ]
                         )
                 )

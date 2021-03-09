@@ -9,7 +9,7 @@ Let's look at how in an example: Implementing a `NaturalNumber`
 ```elm
 module NaturalNumber exposing (NaturalNumber)
 
-import N.Nat.Type exposing (..)
+import N.Nat.Type exposing (..) --Nat0 to Nat192
 ```
 
 - Exact description.
@@ -19,25 +19,25 @@ import N.Nat.Type exposing (..)
     type NaturalNumber n
         = NaturalNumber Int
     
-    one : NaturalNumber N1
+    one : NaturalNumber Nat1
     one =
         NaturalNumber 1
     
-    two : NaturalNumber N2
+    two : NaturalNumber Nat2
     two =
         NaturalNumber 2
     
-    ten : NaturalNumber N10
+    ten : NaturalNumber Nat10
     ten =
         NaturalNumber 10
     
-    takesOnlyExact1 : NaturalNumber N1
+    takesOnlyExact1 : NaturalNumber Nat1
     ```
     - `takesOnlyExact1 ten` is a compile-time-error
 
 - At least description.
     ```elm
-    takesAtLeast2 : NaturalNumber (N2Plus maybeMore)
+    takesAtLeast2 : NaturalNumber (Nat2Plus maybeMore)
     ```
     - `takesAtLeast2 one` is a compile-time-error
     - `takesAtLeast2 ten` & `takesAtLeast2 two` work
@@ -47,15 +47,15 @@ This is already better then most `Nat` packages!
 Say we now want to add an `add` & `subtract` function.
 
 ```elm
-add1 : NaturalNumber n -> NaturalNumber (N1NatPlus n)
+add1 : NaturalNumber n -> NaturalNumber (Nat1NatPlus n)
 add1 naturalNumber =
     NaturalNumber (naturalNumber + 1)
 
-add2 : NaturalNumber n -> NaturalNumber (N2NatPlus n)
+add2 : NaturalNumber n -> NaturalNumber (Nat2NatPlus n)
 add2 =
     add1 >> add1
 
-subtract1 : NaturalNumber (N1Plus nMinus1) -> NaturalNumber nMinus1
+subtract1 : NaturalNumber (Nat1Plus nMinus1) -> NaturalNumber nMinus1
 subtract1 naturalNumber =
     NaturalNumber (naturalNumber - 1)
 ```
@@ -82,7 +82,7 @@ Take a closer look at those packages to see `N.Nat.Type` in action!
 Sadly, while experimenting with type aliases, I discovered that type aliases can only expand so much.
 
 ```elm
-compilingGetsKilled : NaturalNumber (N100Plus N93)
+compilingGetsKilled : NaturalNumber (Nat100Plus N93)
 ```
 
 If a type alias is not fully expanded after _192_ tries, there seems to be a hard limit

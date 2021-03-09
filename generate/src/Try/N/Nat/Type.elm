@@ -1,4 +1,4 @@
-module Try.N.Nat.Type exposing (N0, N1, N10, N1Plus, N2, N2Plus, N3, N3Plus, N4, N4Plus)
+module Try.N.Nat.Type exposing (Nat0, Nat1, Nat10, Nat1Plus, Nat2, Nat2Plus, Nat3, Nat3Plus, Nat4, Nat4Plus)
 
 {-| Describing numbers in a type signature.
 -}
@@ -8,39 +8,39 @@ module Try.N.Nat.Type exposing (N0, N1, N10, N1Plus, N2, N2Plus, N3, N3Plus, N4,
 
 type S more = S Never
 
-type alias N1Plus more
+type alias Nat1Plus more
     = S more
 
 
-type alias N2Plus more =
-    S (N1Plus more)
+type alias Nat2Plus more =
+    S (Nat1Plus more)
 
 
-type alias N3Plus more =
-    S (N2Plus more)
+type alias Nat3Plus more =
+    S (Nat2Plus more)
 
 
-type alias N4Plus more =
-    S (N3Plus more)
+type alias Nat4Plus more =
+    S (Nat3Plus more)
 
 
-type alias N10Plus more =
-    S (N1Plus (N1Plus (N1Plus (N1Plus (N1Plus (N1Plus (N1Plus (N1Plus (N1Plus more)))))))))
+type alias Nat10Plus more =
+    S (Nat1Plus (Nat1Plus (Nat1Plus (Nat1Plus (Nat1Plus (Nat1Plus (Nat1Plus (Nat1Plus (Nat1Plus more)))))))))
 
 
-type alias N100Plus more =
-    N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus more)))))))))
+type alias Nat100Plus more =
+    Nat10Plus (Nat10Plus (Nat10Plus (Nat10Plus (Nat10Plus (Nat10Plus (Nat10Plus (Nat10Plus (Nat10Plus (Nat10Plus more)))))))))
 
 
 type NNat a
     = NNat Int
 
 
-type alias NBiggestNat =
-    N100Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N10Plus (N2Plus N0))))))))))
+type alias NatBiggest =
+    Nat100Plus (Nat10Plus (Nat10Plus (Nat10Plus (Nat10Plus (Nat10Plus (Nat10Plus (Nat10Plus (Nat10Plus (Nat10Plus (Nat2Plus Nat0))))))))))
 
 
-n : NNat NBiggestNat
+n : NNat NatBiggest
 n =
     NNat 192
 
@@ -53,25 +53,25 @@ type Z
     = Z Never
 
 
-type alias N0 =
+type alias Nat0 =
     Z
 
 
-type alias N1 =
-    N1Plus Z
+type alias Nat1 =
+    Nat1Plus Z
 
 
-type alias N2 =
-    N2Plus Z
+type alias Nat2 =
+    Nat2Plus Z
 
 
-type alias N3 =
-    N3Plus Z
+type alias Nat3 =
+    Nat3Plus Z
 
 
-type alias N4 =
-    N4Plus Z
+type alias Nat4 =
+    Nat4Plus Z
 
 
-type alias N10 =
-    N10Plus Z
+type alias Nat10 =
+    Nat10Plus Z
