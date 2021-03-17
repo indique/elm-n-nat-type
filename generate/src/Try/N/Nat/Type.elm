@@ -2,11 +2,11 @@ module Try.N.Nat.Type exposing (Nat0, Nat1, Nat10, Nat1Plus, Nat2, Nat2Plus, Nat
 
 {-| Describing numbers in a type signature.
 -}
-
+import Try.N exposing (S, Z)
 --## at least
 
 
-type S more = S Never
+
 
 type alias Nat1Plus more
     = S more
@@ -47,10 +47,6 @@ n =
 
 
 --## exact
-
-
-type Z
-    = Z Never
 
 
 type alias Nat0 =

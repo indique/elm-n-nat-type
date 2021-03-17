@@ -96,6 +96,8 @@ main =
 type alias Model =
     { nNatTypeModuleShownOrFolded :
         ShownOrFolded (Ui.Element Msg)
+    , nModuleShownOrFolded :
+        ShownOrFolded (Ui.Element Msg)
     }
 
 
@@ -120,6 +122,7 @@ type NNatTypeTag
 init : ( Model, Cmd Msg )
 init =
     ( { nNatTypeModuleShownOrFolded = Folded
+    , nModuleShownOrFolded = Folded
       }
     , Cmd.none
     )
@@ -133,6 +136,7 @@ type Msg
 
 type ModulesInElmNArrays
     = NNatType
+    | N
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -162,6 +166,7 @@ update msg model =
                  in
                  Zip.fromEntries
                     [ toZipEntry nNatTypeModule
+                    , toZipEntry nModule
                     ]
                     |> Zip.toBytes
                 )
@@ -175,6 +180,13 @@ update msg model =
                             switchShownOrFolded
                                 (.nNatTypeModuleShownOrFolded model)
                                 viewNNatTypeModule
+                    }
+                N->
+                    { model
+                        | nModuleShownOrFolded =
+                            switchShownOrFolded
+                                (.nModuleShownOrFolded model)
+                                viewNModule
                     }
             , Cmd.none
             )
@@ -195,6 +207,27 @@ switchShownOrFolded visibility content =
 
 
 --
+
+viewNModule : Ui.Element msg
+viewNModule =
+    Ui.module_ nModule
+
+nModule : Module Never
+nModule =
+    { name = [ "N" ]
+    , roleInPackage = PackageInternalModule
+    , imports = []
+    , declarations =
+        [ packageInternalExposedTypeDecl ClosedType
+            "S"
+            [ "more" ]
+            [ ( "S", [ typed "Never" [] ] ) ]
+        , packageInternalExposedTypeDecl ClosedType
+            "Z"
+            []
+            [ ( "Z", [ typed "Never" [] ] ) ]
+        ]
+    }
 
 
 viewNNatTypeModule : Ui.Element msg
@@ -217,12 +250,17 @@ nNatTypeModule =
                     , docTagsFrom NNatTypeExact declarations
                     ]
             }
-    , imports = []
+    , imports =
+        [ importStmt [ "N" ]
+            noAlias
+            (exposingExplicit
+                [ typeOrAliasExpose "S"
+                , typeOrAliasExpose "Z"
+                ]
+            )
+        ]
     , declarations =
-        [ [ localTypeDecl "S"
-                [ "more" ]
-                [ ( "S", [ typed "Never" [] ] ) ]
-          , packageExposedAliasDecl NNatTypeAtLeast
+        [ [ packageExposedAliasDecl NNatTypeAtLeast
                 [ markdown "1 + some n, which is at least 1."
                 ]
                 "Nat1Plus"
@@ -241,10 +279,7 @@ nNatTypeModule =
                             [ typed "S" [ typeVar "more" ] ]
                         )
                 )
-        , [ localTypeDecl "Z"
-                []
-                [ ( "Z", [ typed "Never" [] ] ) ]
-          , packageExposedAliasDecl NNatTypeExact
+        , [ packageExposedAliasDecl NNatTypeExact
                 [ markdown "Exact the natural number 0."
                 ]
                 "Nat0"
@@ -299,7 +334,7 @@ charPrefixed use last =
 
 
 view : Model -> Html Msg
-view { nNatTypeModuleShownOrFolded } =
+view { nNatTypeModuleShownOrFolded, nModuleShownOrFolded } =
     Ui.layoutWith
         { options =
             [ Ui.focusStyle
@@ -377,6 +412,9 @@ view { nNatTypeModuleShownOrFolded } =
                         in
                         [ ( nNatTypeModuleShownOrFolded
                           , ( "N.Nat.Type", NNatType )
+                          )
+                        , ( nModuleShownOrFolded
+                          , ( "N", N )
                           )
                         ]
                             |> List.map
