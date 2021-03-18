@@ -47,11 +47,11 @@ This is already better then most `Nat` packages!
 Say we now want to add an `add` & `subtract` function.
 
 ```elm
-add1 : NaturalNumber n -> NaturalNumber (Nat1NatPlus n)
+add1 : NaturalNumber n -> NaturalNumber (Nat1Plus n)
 add1 naturalNumber =
     NaturalNumber (naturalNumber + 1)
 
-add2 : NaturalNumber n -> NaturalNumber (Nat2NatPlus n)
+add2 : NaturalNumber n -> NaturalNumber (Nat2Plus n)
 add2 =
     add1 >> add1
 
@@ -73,7 +73,7 @@ We cannot promise that `first DescribesADelta maybeMore Is maybeMoreThanFirst`. 
 → Take a look at [`elm-n-type`][elm-n-type]
 
 
-This package, together with [`elm-n-type`][elm-n-type] is the foundation of [`elm-n-nat`][elm-n-nat], [`elm-nat-within`][elm-nat-within], [`elm-n-array`][elm-n-array].
+This package, together with [`elm-n-type`][elm-n-type] is the foundation of [`elm-n-nat`][elm-n-nat], [`elm-nat-in-range`][elm-nat-in-range], [`elm-array-in-range`][elm-array-in-range].
 
 Take a closer look at those packages to see `N.Nat.Type` in action!
 
@@ -94,5 +94,5 @@ This is really _the_ factor holding this library down. 😞
 
 [elm-n-type]: https://package.elm-lang.org/packages/indique/elm-n-type/latest/
 [elm-n-nat]: https://package.elm-lang.org/packages/indique/elm-n-nat/latest/
-[elm-nat-within]: https://package.elm-lang.org/packages/indique/elm-nat-within/latest/
-[elm-n-array]: https://package.elm-lang.org/packages/indique/elm-n-array/latest/
+[elm-nat-in-range]: https://package.elm-lang.org/packages/indique/elm-nat-in-range/latest/
+[elm-array-in-range]: https://package.elm-lang.org/packages/indique/elm-array-in-range/latest/
