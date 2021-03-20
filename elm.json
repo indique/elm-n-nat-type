@@ -3,9 +3,9 @@
     "name": "indique/elm-n-nat-type",
     "summary": "express natural numbers within a type",
     "license": "MIT",
-    "version": "5.0.2",
+    "version": "6.0.0",
     "exposed-modules": [
-        "N.Nat.Type"
+        "Moved"
     ],
     "elm-version": "0.19.0 <= v < 0.20.0",
     "dependencies": {
