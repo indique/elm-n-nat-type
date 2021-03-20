@@ -11,3 +11,13 @@ Text is useful.
 ```elm
 dummyExample : Never
 ```
+
+This example shown nothing.
+
+Thanks for your interest.
+
+```elm
+iDontKnowHowMuchMore : ()
+```
+
+It seems like you now understand everythig.
