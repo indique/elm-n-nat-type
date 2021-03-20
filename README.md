@@ -1,3 +1,11 @@
 > **Moved into [indique/elm-bounded-nat](https://package.elm-lang.org/packages/indique/elm-bounded-nat/latest/)**
 
 Just ignore `Moved`, it's just a dummy module that must be published.
+
+There also needs to be more text here.
+
+I like text.
+
+Text is useful.
+
+I think you understood.
