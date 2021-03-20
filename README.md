@@ -8,4 +8,6 @@ I like text.
 
 Text is useful.
 
-I think you understood.
+```elm
+dummyExample : Never
+```
