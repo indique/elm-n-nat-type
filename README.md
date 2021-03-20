@@ -20,4 +20,4 @@ Thanks for your interest.
 iDontKnowHowMuchMore : ()
 ```
 
-It seems like you now understand everythig.
+It seems like you now understand everything.
